@@ -168,7 +168,7 @@ public class Field {
         for (int size = 4; size > 0; size--) {
             System.out.println(size);
             do {
-                if (ship.checkSurround(size, field)) {
+                if (ship.checkSurroundInsideField(size, field)) {
                     System.out.println("печатаем");
                     System.out.println();
                     for (int j = 0; j < size; j++) { // расстановка самого корабля работает
