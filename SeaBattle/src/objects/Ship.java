@@ -105,7 +105,7 @@ public class Ship {
     } //Если корабль попал внутрь поля, проверяем не пересекатеся ли
 
     public boolean checkHorizontalShipPerimeter(int size, String field[][]) {
-        int counter = 0;
+        boolean counter = false;
         if (X1 == 1 & Y1 > 1 & Y2 < 10) {
             int temp1 = 0;
             for (int i = Y1 - 1; i <= Y2 + 1; i++) {
@@ -119,7 +119,7 @@ public class Ship {
                     break;
                 }
                 if (temp1 == size + 2) {
-                    counter++;
+                    counter = true;
                 }
             }
         }
@@ -136,13 +136,50 @@ public class Ship {
                     break;
                 }
                 if (temp1 == size + 2) {
-                    counter++;
+                    counter = true;
                 }
             }
         }
-        if (counter == 1) {
+        if (Y1 == 1 & X1 > 1 & X1 < 10) {
+            int temp1 = 0;
+            for (int i = Y1; i <= Y2 + 1; i++) {
+                System.out.println("X1= " + X1 + " X2= " + X2 + " Y1= " + Y1 + " Y2= " + Y2);
+                System.out.println("Проверяем следующие места " + field[X1 - 1][i] + " " + field[X1 + 1][i] + " " + field[X1][Y1 + 1]);
+                if ((Objects.equals(field[X1 - 1][i], "[ ]")) && (Objects.equals(field[X1 + 1][i], "[ ]")) && (Objects.equals(field[X1][Y1 + 1], "[ ]"))) {
+                    System.out.println("проверка проходит хорошо");
+                    temp1++;
+                } else {
+                    System.out.println("Проверка окружения не пройдена, рядом есть корабли");
+                    break;
+                }
+                if (temp1 == size + 2) {
+                    counter = true;
+                }
+            }
+        }
+        if (Y2 == 10 & X1 > 1 & X2 < 10) {
+            int temp1 = 0;
+            for (int i = Y1 - 1; i <= Y2; i++) {
+                System.out.println("X1= " + X1 + " X2= " + X2 + " Y1= " + Y1 + " Y2= " + Y2);
+                System.out.println("Проверяем следующие места " + field[X1 - 1][i] + " " + field[X1 + 1][i] + " " + field[X1][Y1 - 1]);
+                if ((Objects.equals(field[X1 - 1][i], "[ ]")) && (Objects.equals(field[X1 + 1][i], "[ ]")) && (Objects.equals(field[X1][Y1 - 1], "[ ]"))) {
+                    System.out.println("проверка проходит хорошо");
+                    temp1++;
+                } else {
+                    System.out.println("Проверка окружения не пройдена, рядом есть корабли");
+                    break;
+                }
+                if (temp1 == size + 2) {
+                    counter = true;
+                }
+            }
+        }
+
+        if (counter) {
             return true;
-        } else return false;
+        } else {
+            return false;
+        }
     }
 
     public boolean OKToSetShip(int size, String field[][]) {
@@ -153,7 +190,8 @@ public class Ship {
                 }
             }
         }
-        if (isHorizontal && X1 == 1 || X1 == 10 && Y1 > 1 & Y2 < 10) {
+        if (isHorizontal & X1 == 1 || X2 == 10 || Y1 == 1 || Y2 == 10) {
+            System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Попали на периметр");
             if (checkHorizontalShipPerimeter(size, field)) {
                 return true;
             }
