@@ -26,10 +26,11 @@
         <entry file="file://$PROJECT_DIR$/src/objects/Field.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+              <caret line="168" column="37" selection-start-line="168" selection-start-column="37" selection-end-line="168" selection-end-column="37" />
               <folding>
                 <element signature="docComment;class#Field#0" expanded="false" />
                 <element signature="method#initPlayerField#0;class#Field#0" expanded="false" />
+                <element signature="method#printField#0;class#Field#0" expanded="false" />
                 <element signature="method#printDoubleField#0;class#Field#0" expanded="false" />
                 <element signature="e#2263#2294#0" expanded="false" />
               </folding>
@@ -62,14 +63,15 @@
       <file leaf-file-name="Ship.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/objects/Ship.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.74252874">
-              <caret line="63" column="72" selection-start-line="63" selection-start-column="72" selection-end-line="63" selection-end-column="72" />
+            <state vertical-scroll-proportion="0.79310346">
+              <caret line="147" column="59" selection-start-line="147" selection-start-column="59" selection-end-line="147" selection-end-column="59" />
               <folding>
                 <element signature="method#getShipPlaceAndOrientation#0;class#Ship#0" expanded="false" />
                 <element signature="method#coordIsOK#0;class#Ship#0" expanded="false" />
                 <element signature="method#checkPlaceForShip#0;class#Ship#0" expanded="false" />
                 <element signature="method#checkSurroundInsideField#0;class#Ship#0" expanded="false" />
-                <element signature="e#2088#2181#0" expanded="false" />
+                <element signature="method#checkHorizontalShipPerimeter#0;class#Ship#0" expanded="false" />
+                <element signature="method#OKToSetShip#0;class#Ship#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -104,8 +106,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/objects/Player.java" />
         <option value="$PROJECT_DIR$/src/MainTest.java" />
-        <option value="$PROJECT_DIR$/src/objects/Field.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/objects/Field.java" />
         <option value="$PROJECT_DIR$/src/objects/Ship.java" />
       </list>
     </option>
@@ -515,7 +517,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24346405" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2908497" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19515885" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
@@ -571,7 +573,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="79" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/objects/Ship.java</url>
+          <line>49</line>
+          <properties />
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="82" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -604,7 +614,8 @@
             <element signature="method#coordIsOK#0;class#Ship#0" expanded="false" />
             <element signature="method#checkPlaceForShip#0;class#Ship#0" expanded="false" />
             <element signature="method#checkSurroundInsideField#0;class#Ship#0" expanded="false" />
-            <element signature="e#2088#2181#0" expanded="false" />
+            <element signature="method#checkHorizontalShipPerimeter#0;class#Ship#0" expanded="false" />
+            <element signature="method#OKToSetShip#0;class#Ship#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -626,6 +637,7 @@
           <folding>
             <element signature="docComment;class#Field#0" expanded="false" />
             <element signature="method#initPlayerField#0;class#Field#0" expanded="false" />
+            <element signature="method#printField#0;class#Field#0" expanded="false" />
             <element signature="method#printDoubleField#0;class#Field#0" expanded="false" />
             <element signature="e#2263#2294#0" expanded="false" />
           </folding>
@@ -648,7 +660,8 @@
             <element signature="method#coordIsOK#0;class#Ship#0" expanded="false" />
             <element signature="method#checkPlaceForShip#0;class#Ship#0" expanded="false" />
             <element signature="method#checkSurroundInsideField#0;class#Ship#0" expanded="false" />
-            <element signature="e#2088#2181#0" expanded="false" />
+            <element signature="method#checkHorizontalShipPerimeter#0;class#Ship#0" expanded="false" />
+            <element signature="method#OKToSetShip#0;class#Ship#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -670,6 +683,7 @@
           <folding>
             <element signature="docComment;class#Field#0" expanded="false" />
             <element signature="method#initPlayerField#0;class#Field#0" expanded="false" />
+            <element signature="method#printField#0;class#Field#0" expanded="false" />
             <element signature="method#printDoubleField#0;class#Field#0" expanded="false" />
             <element signature="e#2263#2294#0" expanded="false" />
           </folding>
@@ -692,7 +706,8 @@
             <element signature="method#coordIsOK#0;class#Ship#0" expanded="false" />
             <element signature="method#checkPlaceForShip#0;class#Ship#0" expanded="false" />
             <element signature="method#checkSurroundInsideField#0;class#Ship#0" expanded="false" />
-            <element signature="e#2088#2181#0" expanded="false" />
+            <element signature="method#checkHorizontalShipPerimeter#0;class#Ship#0" expanded="false" />
+            <element signature="method#OKToSetShip#0;class#Ship#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -714,6 +729,7 @@
           <folding>
             <element signature="docComment;class#Field#0" expanded="false" />
             <element signature="method#initPlayerField#0;class#Field#0" expanded="false" />
+            <element signature="method#printField#0;class#Field#0" expanded="false" />
             <element signature="method#printDoubleField#0;class#Field#0" expanded="false" />
             <element signature="e#2263#2294#0" expanded="false" />
           </folding>
@@ -736,7 +752,8 @@
             <element signature="method#coordIsOK#0;class#Ship#0" expanded="false" />
             <element signature="method#checkPlaceForShip#0;class#Ship#0" expanded="false" />
             <element signature="method#checkSurroundInsideField#0;class#Ship#0" expanded="false" />
-            <element signature="e#2088#2181#0" expanded="false" />
+            <element signature="method#checkHorizontalShipPerimeter#0;class#Ship#0" expanded="false" />
+            <element signature="method#OKToSetShip#0;class#Ship#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -758,6 +775,7 @@
           <folding>
             <element signature="docComment;class#Field#0" expanded="false" />
             <element signature="method#initPlayerField#0;class#Field#0" expanded="false" />
+            <element signature="method#printField#0;class#Field#0" expanded="false" />
             <element signature="method#printDoubleField#0;class#Field#0" expanded="false" />
             <element signature="e#2263#2294#0" expanded="false" />
           </folding>
@@ -780,7 +798,8 @@
             <element signature="method#coordIsOK#0;class#Ship#0" expanded="false" />
             <element signature="method#checkPlaceForShip#0;class#Ship#0" expanded="false" />
             <element signature="method#checkSurroundInsideField#0;class#Ship#0" expanded="false" />
-            <element signature="e#2088#2181#0" expanded="false" />
+            <element signature="method#checkHorizontalShipPerimeter#0;class#Ship#0" expanded="false" />
+            <element signature="method#OKToSetShip#0;class#Ship#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -802,6 +821,7 @@
           <folding>
             <element signature="docComment;class#Field#0" expanded="false" />
             <element signature="method#initPlayerField#0;class#Field#0" expanded="false" />
+            <element signature="method#printField#0;class#Field#0" expanded="false" />
             <element signature="method#printDoubleField#0;class#Field#0" expanded="false" />
             <element signature="e#2263#2294#0" expanded="false" />
           </folding>
@@ -831,7 +851,8 @@
             <element signature="method#coordIsOK#0;class#Ship#0" expanded="false" />
             <element signature="method#checkPlaceForShip#0;class#Ship#0" expanded="false" />
             <element signature="method#checkSurroundInsideField#0;class#Ship#0" expanded="false" />
-            <element signature="e#2088#2181#0" expanded="false" />
+            <element signature="method#checkHorizontalShipPerimeter#0;class#Ship#0" expanded="false" />
+            <element signature="method#OKToSetShip#0;class#Ship#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -853,6 +874,7 @@
           <folding>
             <element signature="docComment;class#Field#0" expanded="false" />
             <element signature="method#initPlayerField#0;class#Field#0" expanded="false" />
+            <element signature="method#printField#0;class#Field#0" expanded="false" />
             <element signature="method#printDoubleField#0;class#Field#0" expanded="false" />
             <element signature="e#2263#2294#0" expanded="false" />
           </folding>
@@ -882,7 +904,8 @@
             <element signature="method#coordIsOK#0;class#Ship#0" expanded="false" />
             <element signature="method#checkPlaceForShip#0;class#Ship#0" expanded="false" />
             <element signature="method#checkSurroundInsideField#0;class#Ship#0" expanded="false" />
-            <element signature="e#2088#2181#0" expanded="false" />
+            <element signature="method#checkHorizontalShipPerimeter#0;class#Ship#0" expanded="false" />
+            <element signature="method#OKToSetShip#0;class#Ship#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -904,6 +927,7 @@
           <folding>
             <element signature="docComment;class#Field#0" expanded="false" />
             <element signature="method#initPlayerField#0;class#Field#0" expanded="false" />
+            <element signature="method#printField#0;class#Field#0" expanded="false" />
             <element signature="method#printDoubleField#0;class#Field#0" expanded="false" />
             <element signature="e#2263#2294#0" expanded="false" />
           </folding>
@@ -941,6 +965,7 @@
           <folding>
             <element signature="docComment;class#Field#0" expanded="false" />
             <element signature="method#initPlayerField#0;class#Field#0" expanded="false" />
+            <element signature="method#printField#0;class#Field#0" expanded="false" />
             <element signature="method#printDoubleField#0;class#Field#0" expanded="false" />
             <element signature="e#2263#2294#0" expanded="false" />
           </folding>
@@ -978,6 +1003,7 @@
           <folding>
             <element signature="docComment;class#Field#0" expanded="false" />
             <element signature="method#initPlayerField#0;class#Field#0" expanded="false" />
+            <element signature="method#printField#0;class#Field#0" expanded="false" />
             <element signature="method#printDoubleField#0;class#Field#0" expanded="false" />
             <element signature="e#2263#2294#0" expanded="false" />
           </folding>
@@ -1008,6 +1034,7 @@
           <folding>
             <element signature="docComment;class#Field#0" expanded="false" />
             <element signature="method#initPlayerField#0;class#Field#0" expanded="false" />
+            <element signature="method#printField#0;class#Field#0" expanded="false" />
             <element signature="method#printDoubleField#0;class#Field#0" expanded="false" />
             <element signature="e#2263#2294#0" expanded="false" />
           </folding>
@@ -1071,10 +1098,11 @@
     <entry file="file://$PROJECT_DIR$/src/objects/Field.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <caret line="168" column="37" selection-start-line="168" selection-start-column="37" selection-end-line="168" selection-end-column="37" />
           <folding>
             <element signature="docComment;class#Field#0" expanded="false" />
             <element signature="method#initPlayerField#0;class#Field#0" expanded="false" />
+            <element signature="method#printField#0;class#Field#0" expanded="false" />
             <element signature="method#printDoubleField#0;class#Field#0" expanded="false" />
             <element signature="e#2263#2294#0" expanded="false" />
           </folding>
@@ -1083,14 +1111,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/objects/Ship.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.74252874">
-          <caret line="63" column="72" selection-start-line="63" selection-start-column="72" selection-end-line="63" selection-end-column="72" />
+        <state vertical-scroll-proportion="0.79310346">
+          <caret line="147" column="59" selection-start-line="147" selection-start-column="59" selection-end-line="147" selection-end-column="59" />
           <folding>
             <element signature="method#getShipPlaceAndOrientation#0;class#Ship#0" expanded="false" />
             <element signature="method#coordIsOK#0;class#Ship#0" expanded="false" />
             <element signature="method#checkPlaceForShip#0;class#Ship#0" expanded="false" />
             <element signature="method#checkSurroundInsideField#0;class#Ship#0" expanded="false" />
-            <element signature="e#2088#2181#0" expanded="false" />
+            <element signature="method#checkHorizontalShipPerimeter#0;class#Ship#0" expanded="false" />
+            <element signature="method#OKToSetShip#0;class#Ship#0" expanded="false" />
           </folding>
         </state>
       </provider>
