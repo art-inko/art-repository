@@ -62,12 +62,16 @@
       <file leaf-file-name="Ship.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/objects/Ship.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46948355">
-              <caret line="72" column="192" selection-start-line="72" selection-start-column="192" selection-end-line="72" selection-end-column="192" />
+            <state vertical-scroll-proportion="0.5462754">
+              <caret line="63" column="72" selection-start-line="63" selection-start-column="72" selection-end-line="63" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#getShipPlaceAndOrientation#0;class#Ship#0" expanded="false" />
                 <element signature="method#coordIsOK#0;class#Ship#0" expanded="false" />
+                <element signature="method#checkPlaceForShip#0;class#Ship#0" expanded="false" />
+                <element signature="method#checkSurroundInsideField#0;class#Ship#0" expanded="false" />
+                <element signature="method#checkPerimeter#0;class#Ship#0" expanded="false" />
+                <element signature="method#canSetShip#0;class#Ship#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -517,7 +521,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -526,7 +530,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48368955" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46456692" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23954985" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
@@ -534,7 +538,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5590551" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15748031" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -582,7 +586,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="82" />
+      <option name="time" value="84" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -614,6 +618,10 @@
             <element signature="imports" expanded="true" />
             <element signature="method#getShipPlaceAndOrientation#0;class#Ship#0" expanded="false" />
             <element signature="method#coordIsOK#0;class#Ship#0" expanded="false" />
+            <element signature="method#checkPlaceForShip#0;class#Ship#0" expanded="false" />
+            <element signature="method#checkSurroundInsideField#0;class#Ship#0" expanded="false" />
+            <element signature="method#checkPerimeter#0;class#Ship#0" expanded="false" />
+            <element signature="method#canSetShip#0;class#Ship#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -656,6 +664,10 @@
             <element signature="imports" expanded="true" />
             <element signature="method#getShipPlaceAndOrientation#0;class#Ship#0" expanded="false" />
             <element signature="method#coordIsOK#0;class#Ship#0" expanded="false" />
+            <element signature="method#checkPlaceForShip#0;class#Ship#0" expanded="false" />
+            <element signature="method#checkSurroundInsideField#0;class#Ship#0" expanded="false" />
+            <element signature="method#checkPerimeter#0;class#Ship#0" expanded="false" />
+            <element signature="method#canSetShip#0;class#Ship#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -698,6 +710,10 @@
             <element signature="imports" expanded="true" />
             <element signature="method#getShipPlaceAndOrientation#0;class#Ship#0" expanded="false" />
             <element signature="method#coordIsOK#0;class#Ship#0" expanded="false" />
+            <element signature="method#checkPlaceForShip#0;class#Ship#0" expanded="false" />
+            <element signature="method#checkSurroundInsideField#0;class#Ship#0" expanded="false" />
+            <element signature="method#checkPerimeter#0;class#Ship#0" expanded="false" />
+            <element signature="method#canSetShip#0;class#Ship#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -740,6 +756,10 @@
             <element signature="imports" expanded="true" />
             <element signature="method#getShipPlaceAndOrientation#0;class#Ship#0" expanded="false" />
             <element signature="method#coordIsOK#0;class#Ship#0" expanded="false" />
+            <element signature="method#checkPlaceForShip#0;class#Ship#0" expanded="false" />
+            <element signature="method#checkSurroundInsideField#0;class#Ship#0" expanded="false" />
+            <element signature="method#checkPerimeter#0;class#Ship#0" expanded="false" />
+            <element signature="method#canSetShip#0;class#Ship#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -782,6 +802,10 @@
             <element signature="imports" expanded="true" />
             <element signature="method#getShipPlaceAndOrientation#0;class#Ship#0" expanded="false" />
             <element signature="method#coordIsOK#0;class#Ship#0" expanded="false" />
+            <element signature="method#checkPlaceForShip#0;class#Ship#0" expanded="false" />
+            <element signature="method#checkSurroundInsideField#0;class#Ship#0" expanded="false" />
+            <element signature="method#checkPerimeter#0;class#Ship#0" expanded="false" />
+            <element signature="method#canSetShip#0;class#Ship#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -831,6 +855,10 @@
             <element signature="imports" expanded="true" />
             <element signature="method#getShipPlaceAndOrientation#0;class#Ship#0" expanded="false" />
             <element signature="method#coordIsOK#0;class#Ship#0" expanded="false" />
+            <element signature="method#checkPlaceForShip#0;class#Ship#0" expanded="false" />
+            <element signature="method#checkSurroundInsideField#0;class#Ship#0" expanded="false" />
+            <element signature="method#checkPerimeter#0;class#Ship#0" expanded="false" />
+            <element signature="method#canSetShip#0;class#Ship#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -880,6 +908,10 @@
             <element signature="imports" expanded="true" />
             <element signature="method#getShipPlaceAndOrientation#0;class#Ship#0" expanded="false" />
             <element signature="method#coordIsOK#0;class#Ship#0" expanded="false" />
+            <element signature="method#checkPlaceForShip#0;class#Ship#0" expanded="false" />
+            <element signature="method#checkSurroundInsideField#0;class#Ship#0" expanded="false" />
+            <element signature="method#checkPerimeter#0;class#Ship#0" expanded="false" />
+            <element signature="method#canSetShip#0;class#Ship#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1047,16 +1079,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/objects/Field.java">
+    <entry file="file://$PROJECT_DIR$/src/objects/Player.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="172" column="0" selection-start-line="172" selection-start-column="0" selection-end-line="172" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;class#Field#0" expanded="false" />
-            <element signature="method#initPlayerField#0;class#Field#0" expanded="false" />
-            <element signature="method#printDoubleField#0;class#Field#0" expanded="false" />
-            <element signature="e#2263#2294#0" expanded="false" />
-          </folding>
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1070,22 +1097,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/objects/Player.java">
+    <entry file="file://$PROJECT_DIR$/src/objects/Field.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-          <folding />
+          <caret line="172" column="0" selection-start-line="172" selection-start-column="0" selection-end-line="172" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#Field#0" expanded="false" />
+            <element signature="method#initPlayerField#0;class#Field#0" expanded="false" />
+            <element signature="method#printDoubleField#0;class#Field#0" expanded="false" />
+            <element signature="e#2263#2294#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/objects/Ship.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46948355">
-          <caret line="72" column="192" selection-start-line="72" selection-start-column="192" selection-end-line="72" selection-end-column="192" />
+        <state vertical-scroll-proportion="0.5462754">
+          <caret line="63" column="72" selection-start-line="63" selection-start-column="72" selection-end-line="63" selection-end-column="72" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getShipPlaceAndOrientation#0;class#Ship#0" expanded="false" />
             <element signature="method#coordIsOK#0;class#Ship#0" expanded="false" />
+            <element signature="method#checkPlaceForShip#0;class#Ship#0" expanded="false" />
+            <element signature="method#checkSurroundInsideField#0;class#Ship#0" expanded="false" />
+            <element signature="method#checkPerimeter#0;class#Ship#0" expanded="false" />
+            <element signature="method#canSetShip#0;class#Ship#0" expanded="false" />
           </folding>
         </state>
       </provider>

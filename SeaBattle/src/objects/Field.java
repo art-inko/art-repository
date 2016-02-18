@@ -170,7 +170,7 @@ public class Field {
             for (int i = 0; i < temp; i++) {
                 System.out.println(size);
                 do {
-                    if (ship.checkSurroundInsideField(size, field)) {
+                    if (ship.canSetShip(size, field)) {
                         System.out.println("печатаем");
                         System.out.println();
                         for (int j = 0; j < size; j++) { // расстановка самого корабля работает
