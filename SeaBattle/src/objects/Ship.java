@@ -62,7 +62,8 @@ public class Ship {
     }// проверка места под сам корабль
 
     public boolean checkSurroundInsideField(int size, String field[][]) {
-        boolean counter = false;        {
+        boolean counter = false;
+        {
             if (isHorizontal) { //Проверка окружения у горизонтального корабля
                 int temp1 = 0;
                 for (int i = Y1 - 1; i <= Y2 + 1; i++) {
@@ -171,6 +172,78 @@ public class Ship {
                 }
             }
         }
+
+        if (X1 == 1 & Y1 == 1) {
+            int temp1 = 0;
+            for (int i = Y1; i <= Y2 + 1; i++) {
+                System.out.println("Проверяем следующие места " + field[X1 + 1][i] + " " + field[X1][Y2 + 1]);
+                if ((Objects.equals(field[X1 + 1][i], "[ ]")) && (Objects.equals(field[X1][Y2 + 1], "[ ]"))) {
+                    System.out.println("проверка проходит хорошо");
+                    temp1++;
+                } else {
+                    System.out.println("Проверка окружения не пройдена, рядом есть корабли");
+                    break;
+                }
+                if (temp1 == size + 1) {
+                    counter = true;
+                }
+            }
+
+
+        }
+        if (X1 == 1 & Y2 == 10) {
+            int temp1 = 0;
+            for (int i = Y1 - 1; i <= Y2; i++) {
+                System.out.println("Проверяем следующие места " + field[X1 + 1][i] + " " + field[X1][Y1 - 1]);
+                if ((Objects.equals(field[X1 + 1][i], "[ ]")) && (Objects.equals(field[X1][Y1 - 1], "[ ]"))) {
+                    System.out.println("проверка проходит хорошо");
+                    temp1++;
+                } else {
+                    System.out.println("Проверка окружения не пройдена, рядом есть корабли");
+                    break;
+                }
+                if (temp1 == size + 1) {
+                    counter = true;
+                }
+            }
+
+        }
+        if (X1 == 10 & Y1 == 1) {
+            int temp1 = 0;
+            for (int i = Y1; i <= Y2 + 1; i++) {
+                System.out.println("Проверяем следующие места " + field[X1 - 1][i] + " " + field[X1][Y2 + 1]);
+                if ((Objects.equals(field[X1 - 1][i], "[ ]")) && (Objects.equals(field[X1][Y2 + 1], "[ ]"))) {
+                    System.out.println("проверка проходит хорошо");
+                    temp1++;
+                } else {
+                    System.out.println("Проверка окружения не пройдена, рядом есть корабли");
+                    break;
+                }
+                if (temp1 == size + 1) {
+                    counter = true;
+                }
+            }
+
+
+        }
+        if (X1 == 10 & Y2 == 10) {
+            int temp1 = 0;
+            for (int i = Y1 - 1; i <= Y2; i++) {
+                System.out.println("Проверяем следующие места " + field[X1 - 1][i] + " " + field[X1][Y1 - 1]);
+                if ((Objects.equals(field[X1 - 1][i], "[ ]")) && (Objects.equals(field[X1][Y1 - 1], "[ ]"))) {
+                    System.out.println("проверка проходит хорошо");
+                    temp1++;
+                } else {
+                    System.out.println("Проверка окружения не пройдена, рядом есть корабли");
+                    break;
+                }
+                if (temp1 == size + 1) {
+                    counter = true;
+                }
+            }
+
+        }
+
         if (counter) {
             return true;
         } else {
