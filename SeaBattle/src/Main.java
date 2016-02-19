@@ -9,14 +9,14 @@ public class Main {
     public static void main(String[] args) {
 
         Player currentPlayer = new Player();
-        Field playerField = new Field();
 
+        Field playerField = new Field();
         Field PCField = new Field();
-//        currentPlayer.getName();
         playerField.initPlayerField("[ ]");
-        PCField.initPlayerField("{ }");
+        PCField.initPlayerField("[ ]");
         playerField.setShips();
-//        playerField.printField();
+        PCField.setShips();
+
     }
 }
 
