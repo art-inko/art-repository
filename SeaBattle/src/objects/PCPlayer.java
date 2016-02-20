@@ -6,5 +6,5 @@ package objects;
 public class PCPlayer {
     Field PCField = new Field();
 
-
+    // Метод рандомного выстрела
 }

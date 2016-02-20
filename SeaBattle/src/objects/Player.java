@@ -15,10 +15,7 @@ public class Player {
         System.out.println("Приветствую " + string);
     }
 
-    Field playerField = new Field();
 
-
-
-
+    // Метод считывания координат
 }
 

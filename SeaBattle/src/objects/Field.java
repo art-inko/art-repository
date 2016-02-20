@@ -7,8 +7,8 @@ package objects;
 public class Field {
 
     String field[][] = new String[11][11];
-    Field playerField = new Field();
-    Field PCField = new Field();
+//    Field playerField = new Field();
+//    Field PCField = new Field();
 
     public void initPlayerField(String p) {
         for (int i = 0; i < 11; i++) {
@@ -56,25 +56,6 @@ public class Field {
             System.out.println();
         }
     }
-
-//    public void printDoubleField() {
-//        System.out.println("            ***Поле 1го игрока***                                  ***Поле 2го игрока***  ");
-//        System.out.println();
-//        for (int i = 0; i < 11; i++) {
-//            for (int j = 0; j < 11; j++) {
-//                System.out.print(playerField.getField(i, j) + " ");
-//                if (j >= 10) {
-//                    System.out.print("          ");
-//
-//                    for (int d = 0; d < 11; d++) {
-//                        System.out.print(field[i][d] + " ");
-////                    System.out.print(playerField[i][j] + " ");
-//                    }
-//                }
-//            }
-//            System.out.println();
-//        }
-//    }
 
     public void setShips() {
         Ship ship = new Ship();
