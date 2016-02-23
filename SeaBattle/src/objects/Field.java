@@ -7,8 +7,6 @@ package objects;
 public class Field {
 
     String field[][] = new String[11][11];
-//    Field playerField = new Field();
-//    Field PCField = new Field();
 
     public void initPlayerField(String p) {
         for (int i = 0; i < 11; i++) {
@@ -57,7 +55,7 @@ public class Field {
         }
     }
 
-    public void setShips() {
+    public void setShips(String S) {
         Ship ship = new Ship();
         int temp = 1;
         for (int size = 4; size > 0; size--) {
@@ -68,7 +66,7 @@ public class Field {
 //                        System.out.println("печатаем");
 //                        System.out.println();
                         for (int j = 0; j < size; j++) { // расстановка самого корабля работает
-                            field[ship.X1 + j * ship.dx][ship.Y1 + j * ship.dy] = "[H]";
+                            field[ship.X1 + j * ship.dx][ship.Y1 + j * ship.dy] = "[" + S + "]";
                         }
                         //printField();
                         break;
