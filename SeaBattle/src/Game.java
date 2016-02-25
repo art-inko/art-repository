@@ -5,9 +5,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-/**
- * Created by Артем on 20.02.2016.
- */
 public class Game {
 
     public void startGame() throws IOException {
@@ -22,12 +19,22 @@ public class Game {
         playerField.setShips();
         PCField.setShips();
         printDoubleField(playerField, PCField);
-        int playerY = player.getPlayerShootingCoordinateY();
-        int playerX = player.getPlayerShootingCoordinateX();
-        player.makePlayerShoot(PCField, playerX, playerY);
 
-        printDoubleField(playerField, PCField);
-        // Вечный цикл до выигрыша
+        boolean gameIsOver = false;
+        int playerShipsLeft = 20;
+        int PCShipsLeft = 20;
+        while (!gameIsOver) {
+            player.makeShoot(PCField, player.getPlayerShootingCoordinateY(), player.getPlayerShootingCoordinateX());
+            playerShipsLeft--;
+            System.out.println("Осталось кораблей у игрока " + playerShipsLeft);
+            player.makeShoot(playerField, player.getPCShootingCoordinate(), player.getPCShootingCoordinate());
+            printDoubleField(playerField, PCField);
+            if (playerShipsLeft == 0) {
+                gameIsOver = true;
+                System.out.println("Игра Окончена");
+            }
+        }
+        System.out.println("Спасибо за игру");
     }
 
     public void printDoubleField(Field field1, Field Field2) {
@@ -56,12 +63,11 @@ public class Game {
         return myFavoriteLetter;
     }
 
-//    public void makePlayerShoot(Field field1, int q, int w) {
-////        System.out.println(PCField.getField(q,w));
-//        field1.setFieldCell (q, w, "[*]");
-//    }
-
-
+    public static void showStat() {
+        int shoots = 0;
+        int shipsLeft;
+        System.out.println("выстрелов сделано: " + shoots);
+    }
 }
 
 

@@ -1,9 +1,5 @@
 package objects;
 
-/**
- * Created by Алька on 23.11.2015.
- */
-
 public class Field {
 
     String field[][] = new String[11][11];

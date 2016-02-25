@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Objects;
+import java.util.Random;
 import java.util.Scanner;
 
 public class Player {
@@ -15,7 +16,6 @@ public class Player {
         String string = sc.nextLine();
         System.out.println("Приветствую " + string);
     }
-
 
     public int getPlayerShootingCoordinateY() throws IOException {
         int Y = 0;
@@ -67,14 +67,32 @@ public class Player {
 
             if (X < 0 || X > 11) {
                 System.out.println("Вы ввели недопустимое значение, введите цифру снова от 1 до 10");
-                X=0;
+                X = 0;
             }
         }
         return X;
     }
 
-    public void makePlayerShoot(Field field1, int q, int w) {
-//        System.out.println(PCField.getField(q,w));
-        field1.setFieldCell (q, w, "[*]");
+    public int getPCShootingCoordinate() { // комп делает выстрел
+        int compShoot;
+        Random rand = new Random();
+        compShoot = rand.nextInt(10);
+        return compShoot + 1;
+    }
+
+    public boolean makeShoot(Field field1, int q, int w) {
+        boolean isOK = false;
+        while (!isOK) {
+            if (field1.getField(w, q).equals("[H]")) {
+                field1.setFieldCell(w, q, "[X]");
+                isOK = true;
+            } else if (field1.getField(w, q).equals("[ ]")) {
+                field1.setFieldCell(w, q, "[*]");
+                isOK = true;
+            } else {
+                System.out.println("Вы сюда уже стреляли, введите координаты еще раз");
+            }
+        }
+        return isOK;
     }
 }

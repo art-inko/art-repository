@@ -61,7 +61,6 @@ public class Ship {
         return checkPlaceForShip(size, field);
     }// проверка места под сам корабль
 
-
     public boolean checkSurroundInsideField(int size, String field[][]) {
         boolean counter = false;
         {
