@@ -4,6 +4,7 @@ import objects.Player;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Objects;
 
 public class Game {
 
@@ -15,7 +16,7 @@ public class Game {
         playerField.initPlayerField("[ ]");
         PCField.initPlayerField("[ ]");
         PCHiddenField.initPlayerField("[ ]");
-//        String W = whatIsYourFavoriteLetter();
+//      String W = whatIsYourFavoriteLetter();
         playerField.setShips();
         PCField.setShips();
         printDoubleField(playerField, PCField);
@@ -24,14 +25,33 @@ public class Game {
         int playerShipsLeft = 20;
         int PCShipsLeft = 20;
         while (!gameIsOver) {
-            player.makeShoot(PCField, player.getPlayerShootingCoordinateY(), player.getPlayerShootingCoordinateX());
-            playerShipsLeft--;
+            int playerY = player.getPlayerShootingCoordinateY();
+            int playerX = player.getPlayerShootingCoordinateX();
+            player.makeShoot(PCField, playerY, playerX);
+            if (Objects.equals(PCField.getField(playerX, playerY), "[X]")) {
+                playerShipsLeft--;
+            }
             System.out.println("Осталось кораблей у игрока " + playerShipsLeft);
-            player.makeShoot(playerField, player.getPCShootingCoordinate(), player.getPCShootingCoordinate());
+
+            int compX = player.getPCShootingCoordinate();
+            int compY = player.getPCShootingCoordinate();
+            player.makeShoot(playerField, compX, compY);
+            if (Objects.equals(playerField.getField(compX, compY), "[X]")) {
+                PCShipsLeft--;
+            }
+            System.out.println("Осталось кораблей у компьютера " + PCShipsLeft);
             printDoubleField(playerField, PCField);
-            if (playerShipsLeft == 0) {
+            if (playerShipsLeft == 0 | PCShipsLeft == 0) {
                 gameIsOver = true;
                 System.out.println("Игра Окончена");
+                if (playerShipsLeft == PCShipsLeft) {
+                    System.out.println("Ничья");
+                }
+                if (playerShipsLeft > PCShipsLeft) {
+                    System.out.println("Победил Игрок");
+                } else {
+                    System.out.println("Победил компььютер");
+                }
             }
         }
         System.out.println("Спасибо за игру");
