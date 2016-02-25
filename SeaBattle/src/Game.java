@@ -18,16 +18,15 @@ public class Game {
         playerField.initPlayerField("[ ]");
         PCField.initPlayerField("[ ]");
         PCHiddenField.initPlayerField("[ ]");
-        String W = whatIsYourFavoriteLetter();
-        playerField.setShips(W);
-        PCField.setShips(W);
-        printDoubleField(playerField, PCHiddenField);
-
+//        String W = whatIsYourFavoriteLetter();
+        playerField.setShips();
+        PCField.setShips();
+        printDoubleField(playerField, PCField);
         int playerY = player.getPlayerShootingCoordinateY();
         int playerX = player.getPlayerShootingCoordinateX();
+        player.makePlayerShoot(PCField, playerX, playerY);
 
-        player.makeShoot(playerX, playerY, PCField, W);
-        PCField.printField();
+        printDoubleField(playerField, PCField);
         // Вечный цикл до выигрыша
     }
 
@@ -56,4 +55,15 @@ public class Game {
 
         return myFavoriteLetter;
     }
+
+//    public void makePlayerShoot(Field field1, int q, int w) {
+////        System.out.println(PCField.getField(q,w));
+//        field1.setFieldCell (q, w, "[*]");
+//    }
+
+
 }
+
+
+
+

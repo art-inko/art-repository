@@ -55,7 +55,7 @@ public class Field {
         }
     }
 
-    public void setShips(String S) {
+    public void setShips() {
         Ship ship = new Ship();
         int temp = 1;
         for (int size = 4; size > 0; size--) {
@@ -66,7 +66,8 @@ public class Field {
 //                        System.out.println("печатаем");
 //                        System.out.println();
                         for (int j = 0; j < size; j++) { // расстановка самого корабля работает
-                            field[ship.X1 + j * ship.dx][ship.Y1 + j * ship.dy] = "[" + S + "]";
+                            //field[ship.X1 + j * ship.dx][ship.Y1 + j * ship.dy] = "[" + S + "]";
+                            field[ship.X1 + j * ship.dx][ship.Y1 + j * ship.dy] = "[H]";
                         }
                         //printField();
                         break;
@@ -85,9 +86,10 @@ public class Field {
         return (field[x][y]);
     }
 
-    public void setField(String[][] field) {
-        this.field = field;
+    public void setFieldCell(int x, int y, String v) {
+        field[x][y] = v;
     }
+
 }
 
 

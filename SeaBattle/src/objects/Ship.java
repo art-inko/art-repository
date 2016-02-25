@@ -61,6 +61,7 @@ public class Ship {
         return checkPlaceForShip(size, field);
     }// проверка места под сам корабль
 
+
     public boolean checkSurroundInsideField(int size, String field[][]) {
         boolean counter = false;
         {
@@ -112,7 +113,6 @@ public class Ship {
 //                System.out.println("Проверяем следующие места " + field[X1 + 1][i] + " " + field[X1][Y1 - 1] + " " + field[X1][Y2 + 1]);
                 if ((Objects.equals(field[X1 + 1][i], "[ ]")) && (Objects.equals(field[X1][Y1 - 1], "[ ]")) && (Objects.equals(field[X1][Y2 + 1], "[ ]"))) {
 //                    System.out.println("проверка проходит хорошо");
-                    field[X1][Y1] = "123";
                     temp1++;
                 } else {
 //                    System.out.println("Проверка окружения не пройдена, рядом есть корабли");

@@ -3,7 +3,6 @@ package objects;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.Reader;
 import java.util.Objects;
 import java.util.Scanner;
 
@@ -17,54 +16,65 @@ public class Player {
         System.out.println("Приветствую " + string);
     }
 
+
     public int getPlayerShootingCoordinateY() throws IOException {
         int Y = 0;
-        System.out.println("Введите координату (букву)");
-        InputStreamReader isr = new InputStreamReader(System.in);
-        BufferedReader br = new BufferedReader(isr);
-        String s = br.readLine();
-        System.out.println(s);
-        if (s == "A" || s == "a") {
-            Y = 1;
-        }
-        if (s == "B" || s == "b") {
-            Y = 2;
-        }
-        if (s == "C" || s == "c") {
-            Y = 3;
-        }
-        if (s == "D" || s == "d") {
-            Y = 4;
-        }
-        if (s == "E" || s == "e") {
-            Y = 5;
-        }
-        if (s == "F" || s == "f") {
-            Y = 6;
-        }
-        if (s == "G" || s == "g") {
-            Y = 7;
-        }
-        if (s == "H" || s == "h") {
-            Y = 8;
-        }
-        if (s == "I" || s == "i") {
-            Y = 9;
-        }
-        if (s == "J" || s == "j") {
-            Y = 10;
+        System.out.println("Введите координату (букву от А до J)");
+        while (Y == 0) {
+            String s = (new BufferedReader(new InputStreamReader(System.in))).readLine();
+            if (Objects.equals(s, "A") || Objects.equals(s, "a")) {
+                Y = 1;
+            }
+            if (Objects.equals(s, "B") || Objects.equals(s, "b")) {
+                Y = 2;
+            }
+            if (Objects.equals(s, "C") || Objects.equals(s, "c")) {
+                Y = 3;
+            }
+            if (Objects.equals(s, "D") || Objects.equals(s, "d")) {
+                Y = 4;
+            }
+            if (Objects.equals(s, "E") || Objects.equals(s, "e")) {
+                Y = 5;
+            }
+            if (Objects.equals(s, "F") || Objects.equals(s, "f")) {
+                Y = 6;
+            }
+            if (Objects.equals(s, "G") || Objects.equals(s, "g")) {
+                Y = 7;
+            }
+            if (Objects.equals(s, "H") || Objects.equals(s, "h")) {
+                Y = 8;
+            }
+            if (Objects.equals(s, "I") || Objects.equals(s, "i")) {
+                Y = 9;
+            }
+            if (Objects.equals(s, "J") || Objects.equals(s, "j")) {
+                Y = 10;
+            }
+            if (Y == 0) {
+                System.out.println("Вы ввели недопустимое значение, введите букву снова от А до J");
+            }
         }
         return Y;
     }
 
     public int getPlayerShootingCoordinateX() throws IOException {
         System.out.println("Введите цифру");
-        int X = Integer.parseInt(new BufferedReader(new InputStreamReader(System.in)).readLine());
+        int X = 0;
+        while (X == 0) {
+            X = Integer.parseInt(new BufferedReader(new InputStreamReader(System.in)).readLine());
+
+            if (X < 0 || X > 11) {
+                System.out.println("Вы ввели недопустимое значение, введите цифру снова от 1 до 10");
+                X=0;
+            }
+        }
         return X;
     }
 
-    public void makeShoot(int a, int b, Field field, String S) {
-        // if ((Objects.equals(field[a][b], "[" + S + "]"))) {
-
-        }
+    public void makePlayerShoot(Field field1, int q, int w) {
+//        System.out.println(PCField.getField(q,w));
+        field1.setFieldCell (q, w, "[*]");
     }
+}

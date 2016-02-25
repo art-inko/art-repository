@@ -21,21 +21,22 @@
     <favorites_list name="SeaBattle" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Field.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/objects/Field.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="83" column="42" selection-start-line="83" selection-start-column="42" selection-end-line="83" selection-end-column="42" />
+              <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
               <folding>
                 <element signature="docComment;class#Field#0" expanded="false" />
                 <element signature="method#initPlayerField#0;class#Field#0" expanded="false" />
                 <element signature="e#645#693#0" expanded="false" />
                 <element signature="method#printField#0;class#Field#0" expanded="false" />
                 <element signature="method#setShips#0;class#Field#0" expanded="false" />
-                <element signature="e#2609#2610#0" expanded="true" />
-                <element signature="e#2655#2656#0" expanded="true" />
-                <element signature="e#2689#2690#0" expanded="true" />
+                <element signature="e#2656#2657#0" expanded="true" />
+                <element signature="e#2692#2693#0" expanded="true" />
+                <element signature="e#2748#2749#0" expanded="true" />
+                <element signature="e#2779#2780#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -44,12 +45,12 @@
       <file leaf-file-name="Player.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/objects/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.0263158">
-              <caret line="60" column="41" selection-start-line="60" selection-start-column="41" selection-end-line="60" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.425">
+              <caret line="75" column="20" selection-start-line="75" selection-start-column="20" selection-end-line="75" selection-end-column="20" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="method#getName#0;class#Player#0" expanded="false" />
                 <element signature="method#getPlayerShootingCoordinateY#0;class#Player#0" expanded="false" />
+                <element signature="method#getPlayerShootingCoordinateX#0;class#Player#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -59,13 +60,24 @@
         <entry file="file://$PROJECT_DIR$/src/Game.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="28" column="49" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
+              <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;class#Game#0" expanded="false" />
                 <element signature="method#printDoubleField#0;class#Game#0" expanded="false" />
                 <element signature="method#whatIsYourFavoriteLetter#0;class#Game#0" expanded="false" />
+                <element signature="e#1955#2018#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -74,12 +86,10 @@
         <entry file="file://$PROJECT_DIR$/src/objects/Ship.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="114" column="24" selection-start-line="114" selection-start-column="24" selection-end-line="114" selection-end-column="24" />
+              <caret line="115" column="20" selection-start-line="115" selection-start-column="20" selection-end-line="115" selection-end-column="20" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#coordIsOK#0;class#Ship#0" expanded="false" />
+                <element signature="e#6132#6227#0" expanded="false" />
                 <element signature="method#checkVerticalShipPerimeter#0;class#Ship#0" expanded="false" />
-                <element signature="e#11106#11201#0" expanded="false" />
                 <element signature="method#canSetShip#0;class#Ship#0" expanded="false" />
               </folding>
             </state>
@@ -106,19 +116,29 @@
         <option value="$PROJECT_DIR$/src/MainTest.java" />
         <option value="$PROJECT_DIR$/src/objects/methodTest.java" />
         <option value="$PROJECT_DIR$/src/objects/PCPlayer.java" />
+        <option value="$PROJECT_DIR$/src/objects/Field.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Game.java" />
         <option value="$PROJECT_DIR$/src/objects/Ship.java" />
-        <option value="$PROJECT_DIR$/src/objects/Field.java" />
         <option value="$PROJECT_DIR$/src/objects/Player.java" />
       </list>
     </option>
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState />
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1384" />
-    <option name="height" value="738" />
+    <option name="x" value="-4" />
+    <option name="y" value="-4" />
+    <option name="width" value="1374" />
+    <option name="height" value="732" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -128,47 +148,51 @@
             <id />
           </State>
           <State>
+            <id>Abstraction issuesJava</id>
+          </State>
+          <State>
             <id>Android Lint</id>
           </State>
           <State>
-            <id>Class metricsJava</id>
+            <id>Class structureJava</id>
           </State>
           <State>
-            <id>Compiler issuesJava</id>
+            <id>Cloning issuesJava</id>
           </State>
           <State>
-            <id>GPath inspectionsGroovy</id>
+            <id>Data flow issuesJava</id>
           </State>
           <State>
             <id>Groovy</id>
           </State>
           <State>
-            <id>Internationalization issuesJava</id>
-          </State>
-          <State>
-            <id>JSON</id>
+            <id>JUnit issuesJava</id>
           </State>
           <State>
             <id>Java</id>
           </State>
           <State>
-            <id>Kotlin</id>
+            <id>Portability issuesJava</id>
           </State>
           <State>
-            <id>Performance issuesJava</id>
+            <id>Probable bugsJava</id>
           </State>
           <State>
-            <id>Properties Files</id>
+            <id>Serialization issuesJava</id>
           </State>
           <State>
-            <id>Properties FilesJava</id>
+            <id>Threading issuesGroovy</id>
+          </State>
+          <State>
+            <id>Threading issuesJava</id>
+          </State>
+          <State>
+            <id>Verbose or redundant code constructsJava</id>
+          </State>
+          <State>
+            <id>Visibility issuesJava</id>
           </State>
         </expanded-state>
-        <selected-state>
-          <State>
-            <id>Android</id>
-          </State>
-        </selected-state>
       </profile-state>
     </entry>
   </component>
@@ -197,6 +221,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -250,13 +275,12 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Программы IDEA/XOGame" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="dynamic.classpath" value="false" />
     <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
@@ -472,18 +496,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -573,20 +585,21 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1384" height="738" extended-state="6" />
-    <editor active="false" />
+    <frame x="-4" y="-4" width="1374" height="732" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32561985" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32463294" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289256" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930514" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4429752" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6786297" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14787701" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14728096" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32789558" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -598,7 +611,6 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -639,7 +651,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="100" />
+      <option name="time" value="103" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -657,6 +669,7 @@
             <element signature="docComment;class#Game#0" expanded="false" />
             <element signature="method#printDoubleField#0;class#Game#0" expanded="false" />
             <element signature="method#whatIsYourFavoriteLetter#0;class#Game#0" expanded="false" />
+            <element signature="e#1955#2018#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -666,9 +679,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="method#getName#0;class#Player#0" expanded="false" />
             <element signature="method#getPlayerShootingCoordinateY#0;class#Player#0" expanded="false" />
+            <element signature="method#getPlayerShootingCoordinateX#0;class#Player#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -678,10 +691,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#coordIsOK#0;class#Ship#0" expanded="false" />
+            <element signature="e#6132#6227#0" expanded="false" />
             <element signature="method#checkVerticalShipPerimeter#0;class#Ship#0" expanded="false" />
-            <element signature="e#11106#11201#0" expanded="false" />
             <element signature="method#canSetShip#0;class#Ship#0" expanded="false" />
           </folding>
         </state>
@@ -691,7 +702,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -699,7 +709,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -715,10 +724,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#coordIsOK#0;class#Ship#0" expanded="false" />
+            <element signature="e#6132#6227#0" expanded="false" />
             <element signature="method#checkVerticalShipPerimeter#0;class#Ship#0" expanded="false" />
-            <element signature="e#11106#11201#0" expanded="false" />
             <element signature="method#canSetShip#0;class#Ship#0" expanded="false" />
           </folding>
         </state>
@@ -728,9 +735,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-          <folding>
-            <element signature="docComment;class#Main#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -744,6 +748,10 @@
             <element signature="e#645#693#0" expanded="false" />
             <element signature="method#printField#0;class#Field#0" expanded="false" />
             <element signature="method#setShips#0;class#Field#0" expanded="false" />
+            <element signature="e#2656#2657#0" expanded="true" />
+            <element signature="e#2692#2693#0" expanded="true" />
+            <element signature="e#2748#2749#0" expanded="true" />
+            <element signature="e#2779#2780#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -760,10 +768,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#coordIsOK#0;class#Ship#0" expanded="false" />
+            <element signature="e#6132#6227#0" expanded="false" />
             <element signature="method#checkVerticalShipPerimeter#0;class#Ship#0" expanded="false" />
-            <element signature="e#11106#11201#0" expanded="false" />
             <element signature="method#canSetShip#0;class#Ship#0" expanded="false" />
           </folding>
         </state>
@@ -773,9 +779,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;class#Main#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -789,6 +792,10 @@
             <element signature="e#645#693#0" expanded="false" />
             <element signature="method#printField#0;class#Field#0" expanded="false" />
             <element signature="method#setShips#0;class#Field#0" expanded="false" />
+            <element signature="e#2656#2657#0" expanded="true" />
+            <element signature="e#2692#2693#0" expanded="true" />
+            <element signature="e#2748#2749#0" expanded="true" />
+            <element signature="e#2779#2780#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -805,10 +812,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#coordIsOK#0;class#Ship#0" expanded="false" />
+            <element signature="e#6132#6227#0" expanded="false" />
             <element signature="method#checkVerticalShipPerimeter#0;class#Ship#0" expanded="false" />
-            <element signature="e#11106#11201#0" expanded="false" />
             <element signature="method#canSetShip#0;class#Ship#0" expanded="false" />
           </folding>
         </state>
@@ -818,9 +823,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-          <folding>
-            <element signature="docComment;class#Main#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -834,6 +836,10 @@
             <element signature="e#645#693#0" expanded="false" />
             <element signature="method#printField#0;class#Field#0" expanded="false" />
             <element signature="method#setShips#0;class#Field#0" expanded="false" />
+            <element signature="e#2656#2657#0" expanded="true" />
+            <element signature="e#2692#2693#0" expanded="true" />
+            <element signature="e#2748#2749#0" expanded="true" />
+            <element signature="e#2779#2780#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -850,10 +856,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#coordIsOK#0;class#Ship#0" expanded="false" />
+            <element signature="e#6132#6227#0" expanded="false" />
             <element signature="method#checkVerticalShipPerimeter#0;class#Ship#0" expanded="false" />
-            <element signature="e#11106#11201#0" expanded="false" />
             <element signature="method#canSetShip#0;class#Ship#0" expanded="false" />
           </folding>
         </state>
@@ -863,9 +867,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;class#Main#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -879,6 +880,10 @@
             <element signature="e#645#693#0" expanded="false" />
             <element signature="method#printField#0;class#Field#0" expanded="false" />
             <element signature="method#setShips#0;class#Field#0" expanded="false" />
+            <element signature="e#2656#2657#0" expanded="true" />
+            <element signature="e#2692#2693#0" expanded="true" />
+            <element signature="e#2748#2749#0" expanded="true" />
+            <element signature="e#2779#2780#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -895,10 +900,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#coordIsOK#0;class#Ship#0" expanded="false" />
+            <element signature="e#6132#6227#0" expanded="false" />
             <element signature="method#checkVerticalShipPerimeter#0;class#Ship#0" expanded="false" />
-            <element signature="e#11106#11201#0" expanded="false" />
             <element signature="method#canSetShip#0;class#Ship#0" expanded="false" />
           </folding>
         </state>
@@ -908,9 +911,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;class#Main#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -924,6 +924,10 @@
             <element signature="e#645#693#0" expanded="false" />
             <element signature="method#printField#0;class#Field#0" expanded="false" />
             <element signature="method#setShips#0;class#Field#0" expanded="false" />
+            <element signature="e#2656#2657#0" expanded="true" />
+            <element signature="e#2692#2693#0" expanded="true" />
+            <element signature="e#2748#2749#0" expanded="true" />
+            <element signature="e#2779#2780#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -940,10 +944,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#coordIsOK#0;class#Ship#0" expanded="false" />
+            <element signature="e#6132#6227#0" expanded="false" />
             <element signature="method#checkVerticalShipPerimeter#0;class#Ship#0" expanded="false" />
-            <element signature="e#11106#11201#0" expanded="false" />
             <element signature="method#canSetShip#0;class#Ship#0" expanded="false" />
           </folding>
         </state>
@@ -953,9 +955,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-          <folding>
-            <element signature="docComment;class#Main#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -969,6 +968,10 @@
             <element signature="e#645#693#0" expanded="false" />
             <element signature="method#printField#0;class#Field#0" expanded="false" />
             <element signature="method#setShips#0;class#Field#0" expanded="false" />
+            <element signature="e#2656#2657#0" expanded="true" />
+            <element signature="e#2692#2693#0" expanded="true" />
+            <element signature="e#2748#2749#0" expanded="true" />
+            <element signature="e#2779#2780#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -985,10 +988,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#coordIsOK#0;class#Ship#0" expanded="false" />
+            <element signature="e#6132#6227#0" expanded="false" />
             <element signature="method#checkVerticalShipPerimeter#0;class#Ship#0" expanded="false" />
-            <element signature="e#11106#11201#0" expanded="false" />
             <element signature="method#canSetShip#0;class#Ship#0" expanded="false" />
           </folding>
         </state>
@@ -998,9 +999,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;class#Main#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1014,6 +1012,10 @@
             <element signature="e#645#693#0" expanded="false" />
             <element signature="method#printField#0;class#Field#0" expanded="false" />
             <element signature="method#setShips#0;class#Field#0" expanded="false" />
+            <element signature="e#2656#2657#0" expanded="true" />
+            <element signature="e#2692#2693#0" expanded="true" />
+            <element signature="e#2748#2749#0" expanded="true" />
+            <element signature="e#2779#2780#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1029,9 +1031,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;class#Main#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1045,6 +1044,10 @@
             <element signature="e#645#693#0" expanded="false" />
             <element signature="method#printField#0;class#Field#0" expanded="false" />
             <element signature="method#setShips#0;class#Field#0" expanded="false" />
+            <element signature="e#2656#2657#0" expanded="true" />
+            <element signature="e#2692#2693#0" expanded="true" />
+            <element signature="e#2748#2749#0" expanded="true" />
+            <element signature="e#2779#2780#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1060,9 +1063,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
-          <folding>
-            <element signature="docComment;class#Main#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1076,6 +1076,10 @@
             <element signature="e#645#693#0" expanded="false" />
             <element signature="method#printField#0;class#Field#0" expanded="false" />
             <element signature="method#setShips#0;class#Field#0" expanded="false" />
+            <element signature="e#2656#2657#0" expanded="true" />
+            <element signature="e#2692#2693#0" expanded="true" />
+            <element signature="e#2748#2749#0" expanded="true" />
+            <element signature="e#2779#2780#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1091,9 +1095,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-          <folding>
-            <element signature="docComment;class#Main#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1107,6 +1108,10 @@
             <element signature="e#645#693#0" expanded="false" />
             <element signature="method#printField#0;class#Field#0" expanded="false" />
             <element signature="method#setShips#0;class#Field#0" expanded="false" />
+            <element signature="e#2656#2657#0" expanded="true" />
+            <element signature="e#2692#2693#0" expanded="true" />
+            <element signature="e#2748#2749#0" expanded="true" />
+            <element signature="e#2779#2780#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1136,47 +1141,43 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.30769232">
           <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;class#Main#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/objects/Ship.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="114" column="24" selection-start-line="114" selection-start-column="24" selection-end-line="114" selection-end-column="24" />
+          <caret line="115" column="20" selection-start-line="115" selection-start-column="20" selection-end-line="115" selection-end-column="20" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#coordIsOK#0;class#Ship#0" expanded="false" />
+            <element signature="e#6132#6227#0" expanded="false" />
             <element signature="method#checkVerticalShipPerimeter#0;class#Ship#0" expanded="false" />
-            <element signature="e#11106#11201#0" expanded="false" />
             <element signature="method#canSetShip#0;class#Ship#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/objects/Field.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="83" column="42" selection-start-line="83" selection-start-column="42" selection-end-line="83" selection-end-column="42" />
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#Field#0" expanded="false" />
             <element signature="method#initPlayerField#0;class#Field#0" expanded="false" />
             <element signature="e#645#693#0" expanded="false" />
             <element signature="method#printField#0;class#Field#0" expanded="false" />
             <element signature="method#setShips#0;class#Field#0" expanded="false" />
-            <element signature="e#2609#2610#0" expanded="true" />
-            <element signature="e#2655#2656#0" expanded="true" />
-            <element signature="e#2689#2690#0" expanded="true" />
+            <element signature="e#2656#2657#0" expanded="true" />
+            <element signature="e#2692#2693#0" expanded="true" />
+            <element signature="e#2748#2749#0" expanded="true" />
+            <element signature="e#2779#2780#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1184,24 +1185,25 @@
     <entry file="file://$PROJECT_DIR$/src/Game.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="49" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
+          <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;class#Game#0" expanded="false" />
             <element signature="method#printDoubleField#0;class#Game#0" expanded="false" />
             <element signature="method#whatIsYourFavoriteLetter#0;class#Game#0" expanded="false" />
+            <element signature="e#1955#2018#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/objects/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0263158">
-          <caret line="60" column="41" selection-start-line="60" selection-start-column="41" selection-end-line="60" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.425">
+          <caret line="75" column="20" selection-start-line="75" selection-start-column="20" selection-end-line="75" selection-end-column="20" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="method#getName#0;class#Player#0" expanded="false" />
             <element signature="method#getPlayerShootingCoordinateY#0;class#Player#0" expanded="false" />
+            <element signature="method#getPlayerShootingCoordinateX#0;class#Player#0" expanded="false" />
           </folding>
         </state>
       </provider>
