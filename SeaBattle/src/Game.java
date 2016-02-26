@@ -16,29 +16,39 @@ public class Game {
         playerField.initPlayerField("[ ]");
         PCField.initPlayerField("[ ]");
         PCHiddenField.initPlayerField("[ ]");
-//      String W = whatIsYourFavoriteLetter();
-        playerField.setShips();
-        PCField.setShips();
+        String W = whatIsYourFavoriteLetter();
+        playerField.setShips(W);
+        PCField.setShips(W);
         printDoubleField(playerField, PCField);
-
         boolean gameIsOver = false;
         int playerShipsLeft = 20;
         int PCShipsLeft = 20;
         while (!gameIsOver) {
             int playerY = player.getPlayerShootingCoordinateY();
             int playerX = player.getPlayerShootingCoordinateX();
-            player.makeShoot(PCField, playerY, playerX);
+            if (!player.checkShoot(PCField, playerX, playerY, W)) {
+                System.out.println("Вы сюда уже стреляли, введите другие координаты");
+                continue;
+            }
+            int compX = player.getPCShootingCoordinate();
+            int compY = player.getPCShootingCoordinate();
+//            if (!player.checkShoot(playerField, compX, compY, W)) { // закомментировать
+            while (!player.checkShoot(playerField, compX, compY, W)) {
+//                System.out.println("Комп выстрелил туда, куда уже стрелял ранее, пробует еще раз");
+                compX = player.getPCShootingCoordinate();
+                compY = player.getPCShootingCoordinate();
+//                System.out.println("new X== " + compX + " new Y== " + compY);
+            }
+//            }
+            player.makeShoot(PCField, PCHiddenField, playerX, playerY, W);
             if (Objects.equals(PCField.getField(playerX, playerY), "[X]")) {
+                PCShipsLeft--;
+            }
+            player.makeShoot(playerField, playerField, compX, compY, W);
+            if (Objects.equals(playerField.getField(compX, compY), "[X]")) {
                 playerShipsLeft--;
             }
             System.out.println("Осталось кораблей у игрока " + playerShipsLeft);
-
-            int compX = player.getPCShootingCoordinate();
-            int compY = player.getPCShootingCoordinate();
-            player.makeShoot(playerField, compX, compY);
-            if (Objects.equals(playerField.getField(compX, compY), "[X]")) {
-                PCShipsLeft--;
-            }
             System.out.println("Осталось кораблей у компьютера " + PCShipsLeft);
             printDoubleField(playerField, PCField);
             if (playerShipsLeft == 0 | PCShipsLeft == 0) {
@@ -54,6 +64,7 @@ public class Game {
                 }
             }
         }
+
         System.out.println("Спасибо за игру");
     }
 

@@ -188,8 +188,6 @@ public class Ship {
                     counter = true;
                 }
             }
-
-
         }
         if (X1 == 1 & Y2 == 10) {
             int temp1 = 0;
@@ -206,7 +204,6 @@ public class Ship {
                     counter = true;
                 }
             }
-
         }
         if (X1 == 10 & Y1 == 1) {
             int temp1 = 0;
@@ -223,8 +220,6 @@ public class Ship {
                     counter = true;
                 }
             }
-
-
         }
         if (X1 == 10 & Y2 == 10) {
             int temp1 = 0;
@@ -241,7 +236,6 @@ public class Ship {
                     counter = true;
                 }
             }
-
         }
 
         if (counter) {

@@ -80,19 +80,29 @@ public class Player {
         return compShoot + 1;
     }
 
-    public boolean makeShoot(Field field1, int q, int w) {
+    public boolean checkShoot(Field field1, int w, int q, String r) {
+//        System.out.println("X== " + w + " Y== " + q);
+//        System.out.println(field1.getField(w, q)); //Ловим ошибку
+        if (field1.getField(w, q).equals("[" + r + "]") | field1.getField(w, q).equals("[ ]")) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public void makeShoot(Field field1, Field field2, int w, int q, String r) {
         boolean isOK = false;
         while (!isOK) {
-            if (field1.getField(w, q).equals("[H]")) {
+            if (field1.getField(w, q).equals("[" + r + "]")) {
                 field1.setFieldCell(w, q, "[X]");
+                field2.setFieldCell(w, q, "[X]");
                 isOK = true;
             } else if (field1.getField(w, q).equals("[ ]")) {
                 field1.setFieldCell(w, q, "[*]");
+                field2.setFieldCell(w, q, "[*]");
                 isOK = true;
-            } else {
-                System.out.println("Вы сюда уже стреляли, введите координаты еще раз");
+
             }
         }
-        return isOK;
     }
 }
