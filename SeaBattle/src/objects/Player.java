@@ -100,6 +100,7 @@ public class Player {
             } else if (field1.getField(w, q).equals("[ ]")) {
                 field1.setFieldCell(w, q, "[*]");
                 field2.setFieldCell(w, q, "[*]");
+
                 isOK = true;
 
             }

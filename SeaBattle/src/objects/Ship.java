@@ -413,7 +413,9 @@ public class Ship {
         }
         return canSetShip(size, field);
     } // Метод окончательной проверки и разрешения установки корабля
+
 }
+
 
 
 

@@ -1,5 +1,6 @@
 import objects.Field;
 import objects.Player;
+import objects.Ship;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -40,14 +41,25 @@ public class Game {
 //                System.out.println("new X== " + compX + " new Y== " + compY);
             }
 //            }
+
             player.makeShoot(PCField, PCHiddenField, playerX, playerY, W);
             if (Objects.equals(PCField.getField(playerX, playerY), "[X]")) {
                 PCShipsLeft--;
+                System.out.print("Выстрел игрока: ");
+                shipStatus(PCField, W, playerX, playerY);
+            } else {
+                System.out.println("Выстрел игрока: Мимо");
             }
+
             player.makeShoot(playerField, playerField, compX, compY, W);
             if (Objects.equals(playerField.getField(compX, compY), "[X]")) {
                 playerShipsLeft--;
+                System.out.print("Выстрел компьютера: ");
+                shipStatus(playerField, W, compX, compY);
+            } else {
+                System.out.println("Выстрел компьютера: Мимо");
             }
+
             System.out.println("Осталось кораблей у игрока " + playerShipsLeft);
             System.out.println("Осталось кораблей у компьютера " + PCShipsLeft);
             printDoubleField(playerField, PCField);
@@ -99,7 +111,19 @@ public class Game {
         int shipsLeft;
         System.out.println("выстрелов сделано: " + shoots);
     }
+
+    public void shipStatus(Field field, String r, int X, int Y) {
+
+        if (X > 1 & X < 10 & Y > 1 & Y < 10) {
+            if (Objects.equals(field.getField(X - 1, Y), "[" + r + "]") | Objects.equals(field.getField(X + 1, Y), "[" + r + "]") | Objects.equals(field.getField(X, Y - 1), "[" + r + "]") | Objects.equals(field.getField(X, Y + 1), "[" + r + "]")) {
+                System.out.println("Ранил");
+            } else {
+                System.out.println("Периметр");
+            }
+        }
+    }
 }
+
 
 
 

@@ -1,3 +1,5 @@
+import objects.Ship;
+
 import java.io.IOException;
 
 public class Main {
@@ -5,6 +7,11 @@ public class Main {
 
         Game game = new Game();
         game.startGame();
+
+
+
     }
+
 }
+
 
