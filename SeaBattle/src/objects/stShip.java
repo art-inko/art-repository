@@ -142,7 +142,6 @@ public class stShip {        // Класс статистических кора
                         field.setFieldCell(X1, Y2 + 1, "[*]");
                     }
                 }
-
                 if (X1 == 10 & Y2 == 10) {
                     for (int i = Y1 - 1; i <= Y2; i++) {
                         field.setFieldCell(X1 - 1, i, "[*]");
@@ -151,7 +150,10 @@ public class stShip {        // Класс статистических кора
                 }
             } else {
                 if (Y1 == 1 & X1 > 1 & X2 < 10) {
+<<<<<<< 862e82c2584685f3a77433dbfb9bd7e61b236f15
 
+=======
+>>>>>>> 86a820ef2ad0b82168eb90de58d6cb402a2bd503
                     for (int i = X1 - 1; i <= X2 + 1; i++) {
                         field.setFieldCell(i, Y1 + 1, "[*]");
                         field.setFieldCell(X1 - 1, Y1, "[*]");
@@ -199,10 +201,17 @@ public class stShip {        // Класс статистических кора
                     }
                 }
                 if (X2 == 10 & Y1 == 10) {
+<<<<<<< 862e82c2584685f3a77433dbfb9bd7e61b236f15
                     for (int i = X1 - 1; i <= X2; i++) {
                         field.setFieldCell(i, Y1 - 1, "[*]");
                         field.setFieldCell(X1 - 1, Y1, "[*]");
 
+=======
+                    int temp2 = 0;
+                    for (int i = X1 - 1; i <= X2; i++) {
+                        field.setFieldCell(i, Y1 - 1, "[*]");
+                        field.setFieldCell(X1 - 1, Y1, "[*]");
+>>>>>>> 86a820ef2ad0b82168eb90de58d6cb402a2bd503
                     }
                 }
             }

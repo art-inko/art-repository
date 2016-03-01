@@ -53,10 +53,45 @@
                 <element signature="method#whatIsYourFavoriteLetter#0;class#Game#0" expanded="false" />
                 <element signature="method#getshootedShip#0;class#Game#0" expanded="false" />
               </folding>
+=======
+            <state vertical-scroll-proportion="0.0">
+              <caret line="107" column="61" selection-start-line="107" selection-start-column="61" selection-end-line="107" selection-end-column="61" />
+              <folding />
+>>>>>>> 86a820ef2ad0b82168eb90de58d6cb402a2bd503
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< 862e82c2584685f3a77433dbfb9bd7e61b236f15
+=======
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Ship.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/objects/Ship.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="386" column="9" selection-start-line="250" selection-start-column="8" selection-end-line="386" selection-end-column="9" />
+              <folding>
+                <element signature="method#getShipPlaceAndOrientation#0;class#Ship#0" expanded="false" />
+                <element signature="method#coordIsOK#0;class#Ship#0" expanded="false" />
+                <element signature="method#checkPlaceForShip#0;class#Ship#0" expanded="false" />
+                <element signature="method#checkSurroundInsideField#0;class#Ship#0" expanded="false" />
+                <element signature="method#checkHorizontalShipPerimeter#0;class#Ship#0" expanded="false" />
+                <element signature="method#canSetShip#0;class#Ship#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+>>>>>>> 86a820ef2ad0b82168eb90de58d6cb402a2bd503
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -85,7 +120,10 @@
         <option value="$PROJECT_DIR$/src/objects/StShip.java" />
         <option value="$PROJECT_DIR$/src/objects/stShip.java" />
         <option value="$PROJECT_DIR$/src/objects/Player.java" />
+=======
+>>>>>>> 86a820ef2ad0b82168eb90de58d6cb402a2bd503
         <option value="$PROJECT_DIR$/src/Game.java" />
+        <option value="$PROJECT_DIR$/src/objects/StShip.java" />
       </list>
     </option>
   </component>
@@ -100,10 +138,10 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-4" />
-    <option name="y" value="-4" />
-    <option name="width" value="1374" />
-    <option name="height" value="732" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -191,7 +229,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< 862e82c2584685f3a77433dbfb9bd7e61b236f15
       <pane id="PackagesPane" />
+=======
+>>>>>>> 86a820ef2ad0b82168eb90de58d6cb402a2bd503
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -244,8 +285,14 @@
           </PATH>
         </subPane>
       </pane>
+<<<<<<< 862e82c2584685f3a77433dbfb9bd7e61b236f15
       <pane id="Scratches" />
       <pane id="Scope" />
+=======
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
+>>>>>>> 86a820ef2ad0b82168eb90de58d6cb402a2bd503
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -466,6 +513,18 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -564,32 +623,49 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
+<<<<<<< 862e82c2584685f3a77433dbfb9bd7e61b236f15
     <frame x="-4" y="-4" width="1374" height="732" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14845024" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32463294" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+=======
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+>>>>>>> 86a820ef2ad0b82168eb90de58d6cb402a2bd503
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6786297" sideWeight="0.5030211" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930514" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+<<<<<<< 862e82c2584685f3a77433dbfb9bd7e61b236f15
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8384992" sideWeight="0.49697885" order="5" side_tool="false" content_ui="tabs" />
+=======
+>>>>>>> 86a820ef2ad0b82168eb90de58d6cb402a2bd503
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32626426" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14652568" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14630225" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+<<<<<<< 862e82c2584685f3a77433dbfb9bd7e61b236f15
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5008157" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+=======
+>>>>>>> 86a820ef2ad0b82168eb90de58d6cb402a2bd503
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32463294" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.75203913" sideWeight="0.49697885" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32626426" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49102774" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -639,6 +715,31 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< 862e82c2584685f3a77433dbfb9bd7e61b236f15
+=======
+    <entry file="file://$PROJECT_DIR$/src/objects/Ship.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding>
+            <element signature="method#getShipPlaceAndOrientation#0;class#Ship#0" expanded="false" />
+            <element signature="method#coordIsOK#0;class#Ship#0" expanded="false" />
+            <element signature="method#checkPlaceForShip#0;class#Ship#0" expanded="false" />
+            <element signature="method#checkSurroundInsideField#0;class#Ship#0" expanded="false" />
+            <element signature="method#checkHorizontalShipPerimeter#0;class#Ship#0" expanded="false" />
+            <element signature="method#canSetShip#0;class#Ship#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/objects/PCPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> 86a820ef2ad0b82168eb90de58d6cb402a2bd503
     <entry file="file://$PROJECT_DIR$/src/objects/PCPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -657,6 +758,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< 862e82c2584685f3a77433dbfb9bd7e61b236f15
+=======
+          <folding>
+            <element signature="method#getShipPlaceAndOrientation#0;class#Ship#0" expanded="false" />
+            <element signature="method#coordIsOK#0;class#Ship#0" expanded="false" />
+            <element signature="method#checkPlaceForShip#0;class#Ship#0" expanded="false" />
+            <element signature="method#checkSurroundInsideField#0;class#Ship#0" expanded="false" />
+            <element signature="method#checkHorizontalShipPerimeter#0;class#Ship#0" expanded="false" />
+            <element signature="method#canSetShip#0;class#Ship#0" expanded="false" />
+          </folding>
+>>>>>>> 86a820ef2ad0b82168eb90de58d6cb402a2bd503
         </state>
       </provider>
     </entry>
@@ -671,6 +783,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="170" column="31" selection-start-line="170" selection-start-column="31" selection-end-line="170" selection-end-column="31" />
+<<<<<<< 862e82c2584685f3a77433dbfb9bd7e61b236f15
+=======
+          <folding>
+            <element signature="method#initPlayerField#0;class#Field#0" expanded="false" />
+            <element signature="e#3104#3105#0" expanded="false" />
+          </folding>
+>>>>>>> 86a820ef2ad0b82168eb90de58d6cb402a2bd503
         </state>
       </provider>
     </entry>
@@ -685,6 +804,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< 862e82c2584685f3a77433dbfb9bd7e61b236f15
+=======
+          <folding>
+            <element signature="method#getShipPlaceAndOrientation#0;class#Ship#0" expanded="false" />
+            <element signature="method#coordIsOK#0;class#Ship#0" expanded="false" />
+            <element signature="method#checkPlaceForShip#0;class#Ship#0" expanded="false" />
+            <element signature="method#checkSurroundInsideField#0;class#Ship#0" expanded="false" />
+            <element signature="method#checkHorizontalShipPerimeter#0;class#Ship#0" expanded="false" />
+            <element signature="method#canSetShip#0;class#Ship#0" expanded="false" />
+          </folding>
+>>>>>>> 86a820ef2ad0b82168eb90de58d6cb402a2bd503
         </state>
       </provider>
     </entry>
@@ -699,6 +829,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+<<<<<<< 862e82c2584685f3a77433dbfb9bd7e61b236f15
+=======
+          <folding>
+            <element signature="method#initPlayerField#0;class#Field#0" expanded="false" />
+            <element signature="e#3104#3105#0" expanded="false" />
+          </folding>
+>>>>>>> 86a820ef2ad0b82168eb90de58d6cb402a2bd503
         </state>
       </provider>
     </entry>
@@ -713,6 +850,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< 862e82c2584685f3a77433dbfb9bd7e61b236f15
+=======
+          <folding>
+            <element signature="method#getShipPlaceAndOrientation#0;class#Ship#0" expanded="false" />
+            <element signature="method#coordIsOK#0;class#Ship#0" expanded="false" />
+            <element signature="method#checkPlaceForShip#0;class#Ship#0" expanded="false" />
+            <element signature="method#checkSurroundInsideField#0;class#Ship#0" expanded="false" />
+            <element signature="method#checkHorizontalShipPerimeter#0;class#Ship#0" expanded="false" />
+            <element signature="method#canSetShip#0;class#Ship#0" expanded="false" />
+          </folding>
+>>>>>>> 86a820ef2ad0b82168eb90de58d6cb402a2bd503
         </state>
       </provider>
     </entry>
@@ -727,6 +875,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< 862e82c2584685f3a77433dbfb9bd7e61b236f15
+=======
+          <folding>
+            <element signature="method#initPlayerField#0;class#Field#0" expanded="false" />
+            <element signature="e#3104#3105#0" expanded="false" />
+          </folding>
+>>>>>>> 86a820ef2ad0b82168eb90de58d6cb402a2bd503
         </state>
       </provider>
     </entry>
@@ -741,6 +896,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+<<<<<<< 862e82c2584685f3a77433dbfb9bd7e61b236f15
+=======
+          <folding>
+            <element signature="method#getShipPlaceAndOrientation#0;class#Ship#0" expanded="false" />
+            <element signature="method#coordIsOK#0;class#Ship#0" expanded="false" />
+            <element signature="method#checkPlaceForShip#0;class#Ship#0" expanded="false" />
+            <element signature="method#checkSurroundInsideField#0;class#Ship#0" expanded="false" />
+            <element signature="method#checkHorizontalShipPerimeter#0;class#Ship#0" expanded="false" />
+            <element signature="method#canSetShip#0;class#Ship#0" expanded="false" />
+          </folding>
+>>>>>>> 86a820ef2ad0b82168eb90de58d6cb402a2bd503
         </state>
       </provider>
     </entry>
@@ -755,6 +921,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="82" column="8" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="8" />
+<<<<<<< 862e82c2584685f3a77433dbfb9bd7e61b236f15
+=======
+          <folding>
+            <element signature="method#initPlayerField#0;class#Field#0" expanded="false" />
+            <element signature="e#3104#3105#0" expanded="false" />
+          </folding>
+>>>>>>> 86a820ef2ad0b82168eb90de58d6cb402a2bd503
         </state>
       </provider>
     </entry>
@@ -769,6 +942,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+<<<<<<< 862e82c2584685f3a77433dbfb9bd7e61b236f15
+=======
+          <folding>
+            <element signature="method#getShipPlaceAndOrientation#0;class#Ship#0" expanded="false" />
+            <element signature="method#coordIsOK#0;class#Ship#0" expanded="false" />
+            <element signature="method#checkPlaceForShip#0;class#Ship#0" expanded="false" />
+            <element signature="method#checkSurroundInsideField#0;class#Ship#0" expanded="false" />
+            <element signature="method#checkHorizontalShipPerimeter#0;class#Ship#0" expanded="false" />
+            <element signature="method#canSetShip#0;class#Ship#0" expanded="false" />
+          </folding>
+>>>>>>> 86a820ef2ad0b82168eb90de58d6cb402a2bd503
         </state>
       </provider>
     </entry>
@@ -783,6 +967,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="84" column="20" selection-start-line="84" selection-start-column="20" selection-end-line="84" selection-end-column="20" />
+<<<<<<< 862e82c2584685f3a77433dbfb9bd7e61b236f15
+=======
+          <folding>
+            <element signature="method#initPlayerField#0;class#Field#0" expanded="false" />
+            <element signature="e#3104#3105#0" expanded="false" />
+          </folding>
+>>>>>>> 86a820ef2ad0b82168eb90de58d6cb402a2bd503
         </state>
       </provider>
     </entry>
@@ -797,6 +988,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+<<<<<<< 862e82c2584685f3a77433dbfb9bd7e61b236f15
+=======
+          <folding>
+            <element signature="method#getShipPlaceAndOrientation#0;class#Ship#0" expanded="false" />
+            <element signature="method#coordIsOK#0;class#Ship#0" expanded="false" />
+            <element signature="method#checkPlaceForShip#0;class#Ship#0" expanded="false" />
+            <element signature="method#checkSurroundInsideField#0;class#Ship#0" expanded="false" />
+            <element signature="method#checkHorizontalShipPerimeter#0;class#Ship#0" expanded="false" />
+            <element signature="method#canSetShip#0;class#Ship#0" expanded="false" />
+          </folding>
+>>>>>>> 86a820ef2ad0b82168eb90de58d6cb402a2bd503
         </state>
       </provider>
     </entry>
@@ -811,6 +1013,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< 862e82c2584685f3a77433dbfb9bd7e61b236f15
+=======
+          <folding>
+            <element signature="method#initPlayerField#0;class#Field#0" expanded="false" />
+            <element signature="e#3104#3105#0" expanded="false" />
+          </folding>
+>>>>>>> 86a820ef2ad0b82168eb90de58d6cb402a2bd503
         </state>
       </provider>
     </entry>
@@ -825,6 +1034,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+<<<<<<< 862e82c2584685f3a77433dbfb9bd7e61b236f15
+=======
+          <folding>
+            <element signature="method#getShipPlaceAndOrientation#0;class#Ship#0" expanded="false" />
+            <element signature="method#coordIsOK#0;class#Ship#0" expanded="false" />
+            <element signature="method#checkPlaceForShip#0;class#Ship#0" expanded="false" />
+            <element signature="method#checkSurroundInsideField#0;class#Ship#0" expanded="false" />
+            <element signature="method#checkHorizontalShipPerimeter#0;class#Ship#0" expanded="false" />
+            <element signature="method#canSetShip#0;class#Ship#0" expanded="false" />
+          </folding>
+>>>>>>> 86a820ef2ad0b82168eb90de58d6cb402a2bd503
         </state>
       </provider>
     </entry>
@@ -839,6 +1059,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+<<<<<<< 862e82c2584685f3a77433dbfb9bd7e61b236f15
+=======
+          <folding>
+            <element signature="method#initPlayerField#0;class#Field#0" expanded="false" />
+            <element signature="e#3104#3105#0" expanded="false" />
+          </folding>
+>>>>>>> 86a820ef2ad0b82168eb90de58d6cb402a2bd503
         </state>
       </provider>
     </entry>
@@ -860,6 +1087,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< 862e82c2584685f3a77433dbfb9bd7e61b236f15
+=======
+          <folding>
+            <element signature="method#initPlayerField#0;class#Field#0" expanded="false" />
+            <element signature="e#3104#3105#0" expanded="false" />
+          </folding>
+>>>>>>> 86a820ef2ad0b82168eb90de58d6cb402a2bd503
         </state>
       </provider>
     </entry>
@@ -881,6 +1115,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< 862e82c2584685f3a77433dbfb9bd7e61b236f15
+=======
+          <folding>
+            <element signature="method#initPlayerField#0;class#Field#0" expanded="false" />
+            <element signature="e#3104#3105#0" expanded="false" />
+          </folding>
+>>>>>>> 86a820ef2ad0b82168eb90de58d6cb402a2bd503
         </state>
       </provider>
     </entry>
@@ -902,6 +1143,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< 862e82c2584685f3a77433dbfb9bd7e61b236f15
+=======
+          <folding>
+            <element signature="method#initPlayerField#0;class#Field#0" expanded="false" />
+            <element signature="e#3104#3105#0" expanded="false" />
+          </folding>
+>>>>>>> 86a820ef2ad0b82168eb90de58d6cb402a2bd503
         </state>
       </provider>
     </entry>
@@ -951,16 +1199,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+<<<<<<< 862e82c2584685f3a77433dbfb9bd7e61b236f15
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
+=======
+          <folding />
+>>>>>>> 86a820ef2ad0b82168eb90de58d6cb402a2bd503
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/src.zip!/java/util/Random.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< 862e82c2584685f3a77433dbfb9bd7e61b236f15
         <state vertical-scroll-proportion="-0.53662694">
           <caret line="76" column="6" selection-start-line="76" selection-start-column="6" selection-end-line="76" selection-end-column="6" />
+=======
+        <state vertical-scroll-proportion="0.0">
+          <caret line="60" column="5" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
+          <folding>
+            <element signature="method#initPlayerField#0;class#Field#0" expanded="false" />
+            <element signature="e#3104#3105#0" expanded="false" />
+          </folding>
+>>>>>>> 86a820ef2ad0b82168eb90de58d6cb402a2bd503
         </state>
       </provider>
     </entry>
@@ -974,6 +1235,7 @@
     <entry file="file://$PROJECT_DIR$/src/objects/stShip.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+<<<<<<< 862e82c2584685f3a77433dbfb9bd7e61b236f15
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
         </state>
       </provider>
@@ -982,11 +1244,42 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+=======
+          <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+          <folding>
+            <element signature="method#getName#0;class#Player#0" expanded="false" />
+            <element signature="method#getPlayerShootingCoordinateY#0;class#Player#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="107" column="61" selection-start-line="107" selection-start-column="61" selection-end-line="107" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/objects/Ship.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="386" column="9" selection-start-line="250" selection-start-column="8" selection-end-line="386" selection-end-column="9" />
+          <folding>
+            <element signature="method#getShipPlaceAndOrientation#0;class#Ship#0" expanded="false" />
+            <element signature="method#coordIsOK#0;class#Ship#0" expanded="false" />
+            <element signature="method#checkPlaceForShip#0;class#Ship#0" expanded="false" />
+            <element signature="method#checkSurroundInsideField#0;class#Ship#0" expanded="false" />
+            <element signature="method#checkHorizontalShipPerimeter#0;class#Ship#0" expanded="false" />
+            <element signature="method#canSetShip#0;class#Ship#0" expanded="false" />
+          </folding>
+>>>>>>> 86a820ef2ad0b82168eb90de58d6cb402a2bd503
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/objects/Player.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< 862e82c2584685f3a77433dbfb9bd7e61b236f15
         <state vertical-scroll-proportion="0.0">
           <caret line="120" column="32" selection-start-line="120" selection-start-column="32" selection-end-line="120" selection-end-column="32" />
           <folding>
@@ -1012,6 +1305,13 @@
             <element signature="method#printDoubleField#0;class#Game#0" expanded="false" />
             <element signature="method#whatIsYourFavoriteLetter#0;class#Game#0" expanded="false" />
             <element signature="method#getshootedShip#0;class#Game#0" expanded="false" />
+=======
+        <state vertical-scroll-proportion="0.69158876">
+          <caret line="93" column="9" selection-start-line="93" selection-start-column="9" selection-end-line="93" selection-end-column="9" />
+          <folding>
+            <element signature="method#StShip#0;class#StShip#0" expanded="false" />
+            <element signature="method#StShip#1;class#StShip#0" expanded="false" />
+>>>>>>> 86a820ef2ad0b82168eb90de58d6cb402a2bd503
           </folding>
         </state>
       </provider>
