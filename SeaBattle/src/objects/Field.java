@@ -4,7 +4,6 @@ public class Field {
 
     String field[][] = new String[11][11];
 
-
     public void initPlayerField(String p) {
         for (int i = 0; i < 11; i++) {
             if (i == 0) {
@@ -52,22 +51,22 @@ public class Field {
         }
     }
 
-    public void setShips(String r) {
+    public void setShips(StShip[] stShips, String r) {
+
         Ship ship = new Ship();
-
-
+        int count = 0;
         int temp = 1;
         for (int size = 4; size > 0; size--) {
             for (int i = 0; i < temp; i++) {
                 do {
                     if (ship.canSetShip(size, field)) {
+                        stShips[count] = new StShip(ship.X1, ship.X2, ship.Y1, ship.Y2, ship.isHorizontal, size);
 //                        System.out.println("печатаем");
 //                        System.out.println();
                         for (int j = 0; j < size; j++) { // расстановка самого корабля работает
                             field[ship.X1 + j * ship.dx][ship.Y1 + j * ship.dy] = "[" + r + "]";
                         }
                         break;
-
                     }
 //                    else {
 //                        System.out.println("не печатаем");
@@ -75,11 +74,11 @@ public class Field {
 //                    }
                 }
                 while (true);
+                count++;
             }
             temp++;
         }
     }
-
 
     public String getField(int x, int y) {
         return (field[x][y]);
@@ -87,6 +86,13 @@ public class Field {
 
     public void setFieldCell(int x, int y, String v) {
         field[x][y] = v;
+    }
+
+    public void printStShips(StShip[] stShips) {
+        for (int i = 0; i < stShips.length; i++) {
+            System.out.println("корабль № " + i + " size = " + stShips[i].size + " X1 = " + stShips[i].X1 + " Y1 = " + stShips[i].Y1);
+        }
+        System.out.println();
     }
 
 }

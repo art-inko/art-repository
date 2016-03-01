@@ -1,6 +1,7 @@
 import objects.Field;
 import objects.Player;
 import objects.Ship;
+import objects.StShip;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -14,14 +15,22 @@ public class Game {
         Field playerField = new Field();
         Field PCField = new Field();
         Field PCHiddenField = new Field();
+        StShip[] playerStShips = new StShip[10];
+        StShip[] compStShips = new StShip[10];          // Создаем новые экземпляры классов для игры
+
         playerField.initPlayerField("[ ]");
         PCField.initPlayerField("[ ]");
-        PCHiddenField.initPlayerField("[ ]");
+        PCHiddenField.initPlayerField("[ ]");           // Инициализируем пустые поля
+
         String W = whatIsYourFavoriteLetter();
-        playerField.setShips(W);
-        PCField.setShips(W);
+        playerField.setShips(playerStShips, W);
+        PCField.setShips(compStShips, W);
+//        playerField.printStShips(playerStShips);
+//        PCField.printStShips(compStShips);
+
         printDoubleField(playerField, PCField);
-        boolean gameIsOver = false;
+
+        boolean gameIsOver = false;                     // Начали игру
         int playerShipsLeft = 20;
         int PCShipsLeft = 20;
         while (!gameIsOver) {
@@ -42,20 +51,35 @@ public class Game {
             }
 //            }
 
-            player.makeShoot(PCField, PCHiddenField, playerX, playerY, W);
-            if (Objects.equals(PCField.getField(playerX, playerY), "[X]")) {
+            player.makeShoot(PCField, PCHiddenField, playerX, playerY, W);                              //!!!!!!!!!!!!!!!!!!!
+            if (Objects.equals(PCField.getField(playerX, playerY), "[X]")) {                            //!!!!!!!!!!!!!!!!!!!
+                StShip asdf = getshootedShip(playerX, playerY, compStShips);
+                System.out.print("Статус выстрела игрока: ");
+                if (asdf.getLives() > 0) {
+                    System.out.println("Ранил");
+                }
+                if (asdf.getLives() == 0) {
+                    System.out.println("Убил");
+                }
                 PCShipsLeft--;
-                System.out.print("Выстрел игрока: ");
-                shipStatus(PCField, W, playerX, playerY);
+
             } else {
                 System.out.println("Выстрел игрока: Мимо");
             }
 
             player.makeShoot(playerField, playerField, compX, compY, W);
             if (Objects.equals(playerField.getField(compX, compY), "[X]")) {
+                StShip asdf = getshootedShip(compX, compY, playerStShips);
+                System.out.print("Статус выстрела компьютера: ");
+                if (asdf.getLives() > 0) {
+                    System.out.println("Ранил");
+                }
+                if (asdf.getLives() == 0) {
+                    System.out.println("Убил");
+                }
                 playerShipsLeft--;
-                System.out.print("Выстрел компьютера: ");
-                shipStatus(playerField, W, compX, compY);
+
+
             } else {
                 System.out.println("Выстрел компьютера: Мимо");
             }
@@ -81,7 +105,7 @@ public class Game {
     }
 
     public void printDoubleField(Field field1, Field Field2) {
-        System.out.println("            ***Поле 1го игрока***                                  ***Поле 2го игрока***  ");
+        System.out.println("            ***Поле 1го игрока***                                  ***Поле 2го игрока***                   СТАТИСТИКА: ");
         System.out.println();
         for (int i = 0; i < 11; i++) {
             for (int j = 0; j < 11; j++) {
@@ -92,6 +116,7 @@ public class Game {
                     for (int d = 0; d < 11; d++) {
                         System.out.print(Field2.getField(i, d) + " ");
                     }
+                    System.out.print("          ");
                 }
             }
             System.out.println();
@@ -106,23 +131,22 @@ public class Game {
         return myFavoriteLetter;
     }
 
-    public static void showStat() {
-        int shoots = 0;
-        int shipsLeft;
-        System.out.println("выстрелов сделано: " + shoots);
-    }
-
-    public void shipStatus(Field field, String r, int X, int Y) {
-
-        if (X > 1 & X < 10 & Y > 1 & Y < 10) {
-            if (Objects.equals(field.getField(X - 1, Y), "[" + r + "]") | Objects.equals(field.getField(X + 1, Y), "[" + r + "]") | Objects.equals(field.getField(X, Y - 1), "[" + r + "]") | Objects.equals(field.getField(X, Y + 1), "[" + r + "]")) {
-                System.out.println("Ранил");
-            } else {
-                System.out.println("Периметр");
+    public StShip getshootedShip(int w, int q, StShip[] stShip) {
+        StShip shootedShip = new StShip();
+        for (int i = 0; i < 10; i++) {
+            if ((stShip[i].getY1() <= q & q <= stShip[i].getY2() & w == stShip[i].getX1()) | (stShip[i].getX1() <= w & w <= stShip[i].getX2() & q == stShip[i].getY1())) {
+                shootedShip = stShip[i];
+                int temp = shootedShip.getLives();
+                temp--;
+                shootedShip.setLives(temp);
+//                System.out.println("X1 =" + shootedShip.getX1() + " Y1 =" + shootedShip.getY1() + " Size = " + shootedShip.getSize() + " Lives = " + shootedShip.getLives());
+                break;
             }
         }
+        return shootedShip;
     }
 }
+
 
 
 
