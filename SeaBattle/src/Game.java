@@ -60,6 +60,7 @@ public class Game {
                 }
                 if (asdf.getLives() == 0) {
                     System.out.println("Убил");
+                    asdf.surroundWithDots(asdf.getSize(),PCField);
                 }
                 PCShipsLeft--;
 
@@ -70,7 +71,7 @@ public class Game {
             player.makeShoot(playerField, playerField, compX, compY, W);
             if (Objects.equals(playerField.getField(compX, compY), "[X]")) {
                 StShip asdf = getshootedShip(compX, compY, playerStShips);
-                System.out.print("Статус выстрела компьютера: ");
+                System.out.print("Выстрел компьютера: ");
                 if (asdf.getLives() > 0) {
                     System.out.println("Ранил");
                 }
@@ -102,7 +103,7 @@ public class Game {
         }
 
         System.out.println("Спасибо за игру");
-    }
+    }                        // Основной игровой цикл
 
     public void printDoubleField(Field field1, Field Field2) {
         System.out.println("            ***Поле 1го игрока***                                  ***Поле 2го игрока***      ");
@@ -121,7 +122,7 @@ public class Game {
             }
             System.out.println();
         }
-    }
+    }          // Печать двойного поля
 
     public String whatIsYourFavoriteLetter() throws IOException {
         System.out.println("Какая Ваша любимая буква?");
@@ -129,7 +130,7 @@ public class Game {
 //        System.out.println(myFavoriteLetter);
 
         return myFavoriteLetter;
-    }
+    }       // Узнали любимую букву игрока
 
     public StShip getshootedShip(int w, int q, StShip[] stShip) {
         StShip shootedShip = new StShip();
@@ -144,7 +145,9 @@ public class Game {
             }
         }
         return shootedShip;
-    }
+    }       // После попадания проверяем по массиву с координатами кораблей ранен/убит ли корабль
+
+
 }
 
 

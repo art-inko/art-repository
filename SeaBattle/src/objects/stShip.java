@@ -1,7 +1,9 @@
 package objects;
 
 
-public class StShip {
+import java.util.Objects;
+
+public class StShip {        // Класс статистических кораблей, нужны для определения ранен/убил ли корабль и дальнейшего окружения его точками
     int X1;
     int X2;
     int Y1;
@@ -18,10 +20,6 @@ public class StShip {
         this.isHorizontal = isHorizontal;
         this.size = size;
         this.lives = size;
-    }
-
-    enum ShipStatus {
-        alive, hurt, dead
     }
 
     public StShip() {
@@ -73,5 +71,88 @@ public class StShip {
 
     public void setSize(int size) {
         this.size = size;
+    }
+
+
+    public void surroundWithDots(int size, Field field) {
+        if (X1 > 1 & X2 < 10 & Y1 > 1 & Y2 < 10) {
+            if (isHorizontal) { //точки для горизонтального корабля
+                for (int i = Y1 - 1; i <= Y2 + 1; i++) {
+                    field.setFieldCell(X1 - 1, i, "[*]");
+                    field.setFieldCell(X1 + 1, i, "[*]");
+                    field.setFieldCell(X1, Y1 - 1, "[*]");
+                    field.setFieldCell(X1, Y2 + 1, "[*]");
+
+                }
+            } else {           //точки для вертикального корабля
+                for (int i = X1 - 1; i <= X2 + 1; i++) {
+                    field.setFieldCell(i, Y1 - 1, "[*]");
+                    field.setFieldCell(i, Y1 + 1, "[*]");
+                    field.setFieldCell(X1 - 1, Y1, "[*]");
+                    field.setFieldCell(X2 + 1, Y1, "[*]");
+                }
+            }
+        }
+        if (X1 == 1 || X2 == 10 || Y1 == 1 || Y2 == 10) {
+            if (isHorizontal) {
+
+                if (X1 == 1 & Y1 > 1 & Y2 < 10) {
+                    for (int i = Y1 - 1; i <= Y2 + 1; i++) {
+                        field.setFieldCell(X1 + 1, i, "[*]");
+                        field.setFieldCell(X1, Y1 - 1, "[*]");
+                        field.setFieldCell(X1, Y2 + 1, "[*]");
+                    }
+                }
+                if (X1 == 10 & Y1 > 1 & Y2 < 10) {
+                    for (int i = Y1 - 1; i <= Y2 + 1; i++) {
+                        field.setFieldCell(X1 - 1, i, "[*]");
+                        field.setFieldCell(X1, Y1 - 1, "[*]");
+                        field.setFieldCell(X1, Y2 + 1, "[*]");
+                    }
+                }
+                if (Y1 == 1 & X1 > 1 & X2 < 10) {
+                    for (int i = Y1; i <= Y2 + 1; i++) {
+                        field.setFieldCell(X1 - 1, i, "[*]");
+                        field.setFieldCell(X1 + 1, i, "[*]");
+                        field.setFieldCell(X1, Y2 + 1, "[*]");
+                    }
+                }
+                if (Y2 == 10 & X1 > 1 & X2 < 10) {
+                    for (int i = Y1 - 1; i <= Y2; i++) {
+                        field.setFieldCell(X1 - 1, i, "[*]");
+                        field.setFieldCell(X1 + 1, i, "[*]");
+                        field.setFieldCell(X1, Y1 - 1, "[*]");
+                    }
+                }
+                if (X1 == 1 & Y1 == 1) {
+
+                    for (int i = Y1; i <= Y2 + 1; i++) {
+                        field.setFieldCell(X1 + 1, i, "[*]");
+                        field.setFieldCell(X1, Y2 + 1, "[*]");
+                    }
+                }
+                if (X1 == 1 & Y2 == 10) {
+
+                    for (int i = Y1 - 1; i <= Y2; i++) {
+                        field.setFieldCell(X1 + 1, i, "[*]");
+                        field.setFieldCell(X1, Y1 - 1, "[*]");
+                    }
+                }
+                if (X1 == 10 & Y1 == 1) {
+                    for (int i = Y1; i <= Y2 + 1; i++) {
+                        field.setFieldCell(X1 - 1, i, "[*]");
+                        field.setFieldCell(X1, Y2 + 1, "[*]");
+                    }
+                }
+
+                if (X1 == 10 & Y2 == 10) {
+
+                    for (int i = Y1 - 1; i <= Y2; i++) {
+                        field.setFieldCell(X1 - 1, i, "[*]");
+                        field.setFieldCell(X1, Y1 - 1, "[*]");
+                    }
+                }
+            }
+        }
     }
 }

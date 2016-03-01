@@ -57,7 +57,7 @@ public class Player {
             }
         }
         return Y;
-    }
+    }               // Получаем координату от игрока в виде буквы (Y)
 
     public int getPlayerShootingCoordinateX() throws IOException {
         System.out.println("Введите цифру");
@@ -71,14 +71,14 @@ public class Player {
             }
         }
         return X;
-    }
+    }               // Получаем координату от игрока в виде цифры (X)
 
     public int getPCShootingCoordinate() { // комп делает выстрел
         int compShoot;
         Random rand = new Random();
         compShoot = rand.nextInt(10);
         return compShoot + 1;
-    }
+    }                                       // Получаем координату от компьютера в виде цифры (X, Y)
 
     public boolean checkShoot(Field field1, int w, int q, String r) {
 //        System.out.println("X== " + w + " Y== " + q);
@@ -88,7 +88,7 @@ public class Player {
         } else {
             return false;
         }
-    }
+    }            // Проверяем попали или нет
 
     public void makeShoot(Field field1, Field field2, int w, int q, String r) {
         boolean isOK = false;
@@ -105,5 +105,5 @@ public class Player {
 
             }
         }
-    }
+    }  // Если попали делаем выстрел, заменяем ячейку в поле
 }

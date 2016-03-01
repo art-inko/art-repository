@@ -37,7 +37,7 @@ public class Field {
             }
 
         }
-    }
+    }                               // Заполнение поля
 
     public void printField() {
 
