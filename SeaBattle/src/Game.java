@@ -51,8 +51,8 @@ public class Game {
             }
 //            }
 
-            player.makeShoot(PCField, PCHiddenField, playerX, playerY, W);                              //!!!!!!!!!!!!!!!!!!!
-            if (Objects.equals(PCField.getField(playerX, playerY), "[X]")) {                            //!!!!!!!!!!!!!!!!!!!
+            player.makeShoot(PCField, PCHiddenField, playerX, playerY, W);
+            if (Objects.equals(PCField.getField(playerX, playerY), "[X]")) {
                 StShip asdf = getshootedShip(playerX, playerY, compStShips);
                 System.out.print("Статус выстрела игрока: ");
                 if (asdf.getLives() > 0) {
@@ -105,7 +105,7 @@ public class Game {
     }
 
     public void printDoubleField(Field field1, Field Field2) {
-        System.out.println("            ***Поле 1го игрока***                                  ***Поле 2го игрока***                   СТАТИСТИКА: ");
+        System.out.println("            ***Поле 1го игрока***                                  ***Поле 2го игрока***      ");
         System.out.println();
         for (int i = 0; i < 11; i++) {
             for (int j = 0; j < 11; j++) {
