@@ -56,15 +56,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StShip.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/objects/StShip.java">
+      <file leaf-file-name="stShip.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/objects/stShip.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="76" column="54" selection-start-line="76" selection-start-column="54" selection-end-line="76" selection-end-column="54" />
+              <caret line="210" column="1" selection-start-line="210" selection-start-column="1" selection-end-line="210" selection-end-column="1" />
               <folding>
-                <element signature="method#StShip#0;class#StShip#0" expanded="false" />
-                <element signature="method#StShip#1;class#StShip#0" expanded="false" />
-                <element signature="method#surroundWithDots#0;class#StShip#0" expanded="false" />
+                <element signature="method#surroundWithDots#0;class#stShip#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -73,8 +71,8 @@
       <file leaf-file-name="Game.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.7955707">
-              <caret line="62" column="64" selection-start-line="62" selection-start-column="64" selection-end-line="62" selection-end-column="64" />
+            <state vertical-scroll-proportion="0.7103918">
+              <caret line="74" column="48" selection-start-line="74" selection-start-column="48" selection-end-line="74" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#printDoubleField#0;class#Game#0" expanded="false" />
@@ -101,14 +99,14 @@
         <entry file="file://$PROJECT_DIR$/src/objects/Ship.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="401" column="0" selection-start-line="401" selection-start-column="0" selection-end-line="406" selection-end-column="16" />
+              <caret line="386" column="9" selection-start-line="250" selection-start-column="8" selection-end-line="386" selection-end-column="9" />
               <folding>
                 <element signature="method#getShipPlaceAndOrientation#0;class#Ship#0" expanded="false" />
                 <element signature="method#coordIsOK#0;class#Ship#0" expanded="false" />
                 <element signature="method#checkPlaceForShip#0;class#Ship#0" expanded="false" />
                 <element signature="method#checkSurroundInsideField#0;class#Ship#0" expanded="false" />
                 <element signature="method#checkHorizontalShipPerimeter#0;class#Ship#0" expanded="false" />
-                <element signature="method#checkVerticalShipPerimeter#0;class#Ship#0" expanded="false" />
+                <element signature="method#canSetShip#0;class#Ship#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -135,13 +133,13 @@
         <option value="$PROJECT_DIR$/src/objects/methodTest.java" />
         <option value="$PROJECT_DIR$/src/objects/PCPlayer.java" />
         <option value="$PROJECT_DIR$/src/objects/StatisticShip.java" />
-        <option value="$PROJECT_DIR$/src/objects/stShip.java" />
         <option value="$PROJECT_DIR$/src/test.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/objects/Player.java" />
         <option value="$PROJECT_DIR$/src/objects/Field.java" />
         <option value="$PROJECT_DIR$/src/objects/Ship.java" />
         <option value="$PROJECT_DIR$/src/objects/StShip.java" />
+        <option value="$PROJECT_DIR$/src/objects/stShip.java" />
         <option value="$PROJECT_DIR$/src/Game.java" />
       </list>
     </option>
@@ -248,7 +246,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -303,6 +300,7 @@
       </pane>
       <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -622,7 +620,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1374" height="732" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -635,6 +633,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32626426" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14652568" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32626426" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -646,7 +645,6 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32626426" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -706,7 +704,7 @@
             <element signature="method#checkPlaceForShip#0;class#Ship#0" expanded="false" />
             <element signature="method#checkSurroundInsideField#0;class#Ship#0" expanded="false" />
             <element signature="method#checkHorizontalShipPerimeter#0;class#Ship#0" expanded="false" />
-            <element signature="method#checkVerticalShipPerimeter#0;class#Ship#0" expanded="false" />
+            <element signature="method#canSetShip#0;class#Ship#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -742,7 +740,7 @@
             <element signature="method#checkPlaceForShip#0;class#Ship#0" expanded="false" />
             <element signature="method#checkSurroundInsideField#0;class#Ship#0" expanded="false" />
             <element signature="method#checkHorizontalShipPerimeter#0;class#Ship#0" expanded="false" />
-            <element signature="method#checkVerticalShipPerimeter#0;class#Ship#0" expanded="false" />
+            <element signature="method#canSetShip#0;class#Ship#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -786,7 +784,7 @@
             <element signature="method#checkPlaceForShip#0;class#Ship#0" expanded="false" />
             <element signature="method#checkSurroundInsideField#0;class#Ship#0" expanded="false" />
             <element signature="method#checkHorizontalShipPerimeter#0;class#Ship#0" expanded="false" />
-            <element signature="method#checkVerticalShipPerimeter#0;class#Ship#0" expanded="false" />
+            <element signature="method#canSetShip#0;class#Ship#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -830,7 +828,7 @@
             <element signature="method#checkPlaceForShip#0;class#Ship#0" expanded="false" />
             <element signature="method#checkSurroundInsideField#0;class#Ship#0" expanded="false" />
             <element signature="method#checkHorizontalShipPerimeter#0;class#Ship#0" expanded="false" />
-            <element signature="method#checkVerticalShipPerimeter#0;class#Ship#0" expanded="false" />
+            <element signature="method#canSetShip#0;class#Ship#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -874,7 +872,7 @@
             <element signature="method#checkPlaceForShip#0;class#Ship#0" expanded="false" />
             <element signature="method#checkSurroundInsideField#0;class#Ship#0" expanded="false" />
             <element signature="method#checkHorizontalShipPerimeter#0;class#Ship#0" expanded="false" />
-            <element signature="method#checkVerticalShipPerimeter#0;class#Ship#0" expanded="false" />
+            <element signature="method#canSetShip#0;class#Ship#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -918,7 +916,7 @@
             <element signature="method#checkPlaceForShip#0;class#Ship#0" expanded="false" />
             <element signature="method#checkSurroundInsideField#0;class#Ship#0" expanded="false" />
             <element signature="method#checkHorizontalShipPerimeter#0;class#Ship#0" expanded="false" />
-            <element signature="method#checkVerticalShipPerimeter#0;class#Ship#0" expanded="false" />
+            <element signature="method#canSetShip#0;class#Ship#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -962,7 +960,7 @@
             <element signature="method#checkPlaceForShip#0;class#Ship#0" expanded="false" />
             <element signature="method#checkSurroundInsideField#0;class#Ship#0" expanded="false" />
             <element signature="method#checkHorizontalShipPerimeter#0;class#Ship#0" expanded="false" />
-            <element signature="method#checkVerticalShipPerimeter#0;class#Ship#0" expanded="false" />
+            <element signature="method#canSetShip#0;class#Ship#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1006,7 +1004,7 @@
             <element signature="method#checkPlaceForShip#0;class#Ship#0" expanded="false" />
             <element signature="method#checkSurroundInsideField#0;class#Ship#0" expanded="false" />
             <element signature="method#checkHorizontalShipPerimeter#0;class#Ship#0" expanded="false" />
-            <element signature="method#checkVerticalShipPerimeter#0;class#Ship#0" expanded="false" />
+            <element signature="method#canSetShip#0;class#Ship#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1199,34 +1197,32 @@
     <entry file="file://$PROJECT_DIR$/src/objects/Ship.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="401" column="0" selection-start-line="401" selection-start-column="0" selection-end-line="406" selection-end-column="16" />
+          <caret line="386" column="9" selection-start-line="250" selection-start-column="8" selection-end-line="386" selection-end-column="9" />
           <folding>
             <element signature="method#getShipPlaceAndOrientation#0;class#Ship#0" expanded="false" />
             <element signature="method#coordIsOK#0;class#Ship#0" expanded="false" />
             <element signature="method#checkPlaceForShip#0;class#Ship#0" expanded="false" />
             <element signature="method#checkSurroundInsideField#0;class#Ship#0" expanded="false" />
             <element signature="method#checkHorizontalShipPerimeter#0;class#Ship#0" expanded="false" />
-            <element signature="method#checkVerticalShipPerimeter#0;class#Ship#0" expanded="false" />
+            <element signature="method#canSetShip#0;class#Ship#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/objects/StShip.java">
+    <entry file="file://$PROJECT_DIR$/src/objects/stShip.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="76" column="54" selection-start-line="76" selection-start-column="54" selection-end-line="76" selection-end-column="54" />
+          <caret line="210" column="1" selection-start-line="210" selection-start-column="1" selection-end-line="210" selection-end-column="1" />
           <folding>
-            <element signature="method#StShip#0;class#StShip#0" expanded="false" />
-            <element signature="method#StShip#1;class#StShip#0" expanded="false" />
-            <element signature="method#surroundWithDots#0;class#StShip#0" expanded="false" />
+            <element signature="method#surroundWithDots#0;class#stShip#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.7955707">
-          <caret line="62" column="64" selection-start-line="62" selection-start-column="64" selection-end-line="62" selection-end-column="64" />
+        <state vertical-scroll-proportion="0.7103918">
+          <caret line="74" column="48" selection-start-line="74" selection-start-column="48" selection-end-line="74" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#printDoubleField#0;class#Game#0" expanded="false" />

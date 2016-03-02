@@ -1,12 +1,10 @@
-import objects.StShip;
-
 /**
  * Created by Art-PC on 01.03.2016.
  */
 public class test {
     public static void main(String[] args) {
 
-//        public StShip qw () {
+//        public stShip qw () {
 //            if (field1.getField(w, q).equals("[" + r + "]")) {
 //                stShip shootedShip = new stShip();
 //                for (int i = 0; i < 10; i++) {

@@ -51,7 +51,7 @@ public class Field {
         }
     }
 
-    public void setShips(StShip[] stShips, String r) {
+    public void setShips(stShip[] stShips, String r) {
 
         Ship ship = new Ship();
         int count = 0;
@@ -60,7 +60,7 @@ public class Field {
             for (int i = 0; i < temp; i++) {
                 do {
                     if (ship.canSetShip(size, field)) {
-                        stShips[count] = new StShip(ship.X1, ship.X2, ship.Y1, ship.Y2, ship.isHorizontal, size);
+                        stShips[count] = new stShip(ship.X1, ship.X2, ship.Y1, ship.Y2, ship.isHorizontal, size);
 //                        System.out.println("печатаем");
 //                        System.out.println();
                         for (int j = 0; j < size; j++) { // расстановка самого корабля работает
@@ -88,7 +88,7 @@ public class Field {
         field[x][y] = v;
     }
 
-    public void printStShips(StShip[] stShips) {
+    public void printStShips(stShip[] stShips) {
         for (int i = 0; i < stShips.length; i++) {
             System.out.println("корабль № " + i + " size = " + stShips[i].size + " X1 = " + stShips[i].X1 + " Y1 = " + stShips[i].Y1);
         }

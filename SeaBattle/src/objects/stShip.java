@@ -3,7 +3,7 @@ package objects;
 
 import java.util.Objects;
 
-public class StShip {        // Класс статистических кораблей, нужны для определения ранен/убил ли корабль и дальнейшего окружения его точками
+public class stShip {        // Класс статистических кораблей, нужны для определения ранен/убил ли корабль и дальнейшего окружения его точками
     int X1;
     int X2;
     int Y1;
@@ -12,7 +12,7 @@ public class StShip {        // Класс статистических кора
     int size;
     int lives;
 
-    public StShip(int x1, int x2, int y1, int y2, boolean isHorizontal, int size) {
+    public stShip(int x1, int x2, int y1, int y2, boolean isHorizontal, int size) {
         X1 = x1;
         X2 = x2;
         Y1 = y1;
@@ -22,7 +22,7 @@ public class StShip {        // Класс статистических кора
         this.lives = size;
     }
 
-    public StShip() {
+    public stShip() {
     }
 
     public int getX1() {
@@ -76,15 +76,14 @@ public class StShip {        // Класс статистических кора
 
     public void surroundWithDots(int size, Field field) {
         if (X1 > 1 & X2 < 10 & Y1 > 1 & Y2 < 10) {
-            if (isHorizontal) { //точки для горизонтального корабля
+            if (isHorizontal) {                     //точки для горизонтального корабля
                 for (int i = Y1 - 1; i <= Y2 + 1; i++) {
                     field.setFieldCell(X1 - 1, i, "[*]");
                     field.setFieldCell(X1 + 1, i, "[*]");
                     field.setFieldCell(X1, Y1 - 1, "[*]");
                     field.setFieldCell(X1, Y2 + 1, "[*]");
-
                 }
-            } else {           //точки для вертикального корабля
+            } else {                                //точки для вертикального корабля
                 for (int i = X1 - 1; i <= X2 + 1; i++) {
                     field.setFieldCell(i, Y1 - 1, "[*]");
                     field.setFieldCell(i, Y1 + 1, "[*]");
@@ -95,7 +94,6 @@ public class StShip {        // Класс статистических кора
         }
         if (X1 == 1 || X2 == 10 || Y1 == 1 || Y2 == 10) {
             if (isHorizontal) {
-
                 if (X1 == 1 & Y1 > 1 & Y2 < 10) {
                     for (int i = Y1 - 1; i <= Y2 + 1; i++) {
                         field.setFieldCell(X1 + 1, i, "[*]");
@@ -146,10 +144,65 @@ public class StShip {        // Класс статистических кора
                 }
 
                 if (X1 == 10 & Y2 == 10) {
-
                     for (int i = Y1 - 1; i <= Y2; i++) {
                         field.setFieldCell(X1 - 1, i, "[*]");
                         field.setFieldCell(X1, Y1 - 1, "[*]");
+                    }
+                }
+            } else {
+                if (Y1 == 1 & X1 > 1 & X2 < 10) {
+
+                    for (int i = X1 - 1; i <= X2 + 1; i++) {
+                        field.setFieldCell(i, Y1 + 1, "[*]");
+                        field.setFieldCell(X1 - 1, Y1, "[*]");
+                        field.setFieldCell(X2 + 1, Y1, "[*]");
+                    }
+                }
+                if (Y1 == 10 & X1 > 1 & X2 < 10) {
+                    for (int i = X1 - 1; i <= X2 + 1; i++) {
+                        field.setFieldCell(i, Y1 - 1, "[*]");
+                        field.setFieldCell(X1 - 1, Y1, "[*]");
+                        field.setFieldCell(X2 + 1, Y1, "[*]");
+                    }
+                }
+                if (X1 == 1 & Y1 > 1 & Y2 < 10) {
+                    for (int i = X1; i <= X2 + 1; i++) {
+                        field.setFieldCell(i, Y1 - 1, "[*]");
+                        field.setFieldCell(i, Y1 + 1, "[*]");
+                        field.setFieldCell(X2 + 1, Y1, "[*]");
+                    }
+                }
+                if (X2 == 10 & Y1 > 1 & Y2 < 10) {
+                    for (int i = X1 - 1; i <= X2; i++) {
+                        field.setFieldCell(i, Y1 - 1, "[*]");
+                        field.setFieldCell(i, Y1 + 1, "[*]");
+                        field.setFieldCell(X1 - 1, Y1, "[*]");
+                    }
+                }
+                if (X1 == 1 & Y1 == 1) {
+                    for (int i = X1; i <= X2 + 1; i++) {
+                        field.setFieldCell(i, Y1 + 1, "[*]");
+                        field.setFieldCell(X2 + 1, Y1, "[*]");
+                    }
+                }
+                if (X1 == 1 & Y1 == 10) {
+                    for (int i = X1; i <= X2 + 1; i++) {
+                        field.setFieldCell(i, Y1 - 1, "[*]");
+                        field.setFieldCell(X2 + 1, Y1, "[*]");
+                    }
+                }
+                if (X2 == 10 & Y1 == 1) {
+
+                    for (int i = X1 - 1; i <= X2; i++) {
+                        field.setFieldCell(i, Y1 + 1, "[*]");
+                        field.setFieldCell(X1 - 1, Y1, "[*]");
+                    }
+                }
+                if (X2 == 10 & Y1 == 10) {
+                    for (int i = X1 - 1; i <= X2; i++) {
+                        field.setFieldCell(i, Y1 - 1, "[*]");
+                        field.setFieldCell(X1 - 1, Y1, "[*]");
+
                     }
                 }
             }

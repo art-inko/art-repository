@@ -1,7 +1,6 @@
 import objects.Field;
 import objects.Player;
-import objects.Ship;
-import objects.StShip;
+import objects.stShip;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -15,8 +14,8 @@ public class Game {
         Field playerField = new Field();
         Field PCField = new Field();
         Field PCHiddenField = new Field();
-        StShip[] playerStShips = new StShip[10];
-        StShip[] compStShips = new StShip[10];          // Создаем новые экземпляры классов для игры
+        stShip[] playerStShips = new stShip[10];
+        stShip[] compStShips = new stShip[10];          // Создаем новые экземпляры классов для игры
 
         playerField.initPlayerField("[ ]");
         PCField.initPlayerField("[ ]");
@@ -53,7 +52,7 @@ public class Game {
 
             player.makeShoot(PCField, PCHiddenField, playerX, playerY, W);
             if (Objects.equals(PCField.getField(playerX, playerY), "[X]")) {
-                StShip asdf = getshootedShip(playerX, playerY, compStShips);
+                stShip asdf = getshootedShip(playerX, playerY, compStShips);
                 System.out.print("Статус выстрела игрока: ");
                 if (asdf.getLives() > 0) {
                     System.out.println("Ранил");
@@ -70,13 +69,14 @@ public class Game {
 
             player.makeShoot(playerField, playerField, compX, compY, W);
             if (Objects.equals(playerField.getField(compX, compY), "[X]")) {
-                StShip asdf = getshootedShip(compX, compY, playerStShips);
+                stShip asdf = getshootedShip(compX, compY, playerStShips);
                 System.out.print("Выстрел компьютера: ");
                 if (asdf.getLives() > 0) {
                     System.out.println("Ранил");
                 }
                 if (asdf.getLives() == 0) {
                     System.out.println("Убил");
+                    asdf.surroundWithDots(asdf.getSize(),playerField);
                 }
                 playerShipsLeft--;
 
@@ -132,8 +132,8 @@ public class Game {
         return myFavoriteLetter;
     }       // Узнали любимую букву игрока
 
-    public StShip getshootedShip(int w, int q, StShip[] stShip) {
-        StShip shootedShip = new StShip();
+    public stShip getshootedShip(int w, int q, stShip[] stShip) {
+        objects.stShip shootedShip = new stShip();
         for (int i = 0; i < 10; i++) {
             if ((stShip[i].getY1() <= q & q <= stShip[i].getY2() & w == stShip[i].getX1()) | (stShip[i].getX1() <= w & w <= stShip[i].getX2() & q == stShip[i].getY1())) {
                 shootedShip = stShip[i];
