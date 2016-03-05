@@ -6,6 +6,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Objects;
+import java.util.Random;
 
 public class Game {
 
@@ -28,10 +29,14 @@ public class Game {
 //        PCField.printStShips(compStShips);
 
         printDoubleField(playerField, PCField);
-
+        boolean compHitShip = false;
         boolean gameIsOver = false;                     // Начали игру
         int playerShipsLeft = 20;
         int PCShipsLeft = 20;
+        int oldPCX = 0;
+        int oldPCY = 0;
+        int compX = 0;
+        int compY = 0;
         while (!gameIsOver) {
             int playerY = player.getPlayerShootingCoordinateY();
             int playerX = player.getPlayerShootingCoordinateX();
@@ -39,18 +44,7 @@ public class Game {
                 System.out.println("Вы сюда уже стреляли, введите другие координаты");
                 continue;
             }
-            int compX = player.getPCShootingCoordinate();
-            int compY = player.getPCShootingCoordinate();
-//            if (!player.checkShoot(playerField, compX, compY, W)) { // закомментировать
-            while (!player.checkShoot(playerField, compX, compY, W)) {
-//                System.out.println("Комп выстрелил туда, куда уже стрелял ранее, пробует еще раз");
-                compX = player.getPCShootingCoordinate();
-                compY = player.getPCShootingCoordinate();
-//                System.out.println("new X== " + compX + " new Y== " + compY);
-            }
-//            }
-
-            player.makeShoot(PCField, PCHiddenField, playerX, playerY, W);
+            player.makeShoot(PCField, PCHiddenField, playerX, playerY, W);          //Выстрел Игрока начинается
             if (Objects.equals(PCField.getField(playerX, playerY), "[X]")) {
                 stShip asdf = getshootedShip(playerX, playerY, compStShips);
                 System.out.print("Статус выстрела игрока: ");
@@ -59,30 +53,72 @@ public class Game {
                 }
                 if (asdf.getLives() == 0) {
                     System.out.println("Убил");
-                    asdf.surroundWithDots(asdf.getSize(),PCField);
+                    asdf.surroundWithDots(asdf.getSize(), PCField);
                 }
                 PCShipsLeft--;
-
             } else {
                 System.out.println("Выстрел игрока: Мимо");
-            }
+            }                                                                           //Выстрел Игрока заканчивается
 
-            player.makeShoot(playerField, playerField, compX, compY, W);
-            if (Objects.equals(playerField.getField(compX, compY), "[X]")) {
-                stShip asdf = getshootedShip(compX, compY, playerStShips);
-                System.out.print("Выстрел компьютера: ");
-                if (asdf.getLives() > 0) {
-                    System.out.println("Ранил");
+            if (compHitShip) {
+                while (!player.checkShoot(playerField, compX, compY, W)) {
+                    Random rand = new Random();
+                    int temp1 = rand.nextInt(2);
+                    if (temp1 == 1) {
+                        compX = player.smartX(oldPCX);
+                    } else {
+                        compY = player.smartY(oldPCY);
+                    }
                 }
-                if (asdf.getLives() == 0) {
-                    System.out.println("Убил");
-                    asdf.surroundWithDots(asdf.getSize(),playerField);
+                System.out.println("Комп добивает");
+                System.out.println("Old X = " + oldPCX + " New X = " + compX + " Old Y = " + oldPCY + " New Y = " + compY);
+                player.makeShoot(playerField, playerField, compX, compY, W);            //Выстрел компа начинается
+                if (Objects.equals(playerField.getField(compX, compY), "[X]")) {
+                    stShip asdf = getshootedShip(compX, compY, playerStShips);
+                    System.out.print("Выстрел компьютера: ");
+                    if (asdf.getLives() > 0) {
+                        System.out.println("Ранил снова ");
+                        oldPCX = compX;
+                        oldPCY = compY;
+                    }
+                    if (asdf.getLives() == 0) {
+                        System.out.println("Убил");
+                        asdf.surroundWithDots(asdf.getSize(), playerField);
+                        compHitShip = false;
+                    }
+                    playerShipsLeft--;
+                } else {
+                    System.out.println("Выстрел компьютера: Мимо");
+                    oldPCX = compX;
+                    oldPCY = compY;
                 }
-                playerShipsLeft--;
-
-
             } else {
-                System.out.println("Выстрел компьютера: Мимо");
+                compX = player.getPCShootingCoordinate();
+                compY = player.getPCShootingCoordinate();
+//            if (!player.checkShoot(playerField, compX, compY, W)) { // закомментировать
+                while (!player.checkShoot(playerField, compX, compY, W)) {
+                    compX = player.getPCShootingCoordinate();
+                    compY = player.getPCShootingCoordinate();
+                }
+                player.makeShoot(playerField, playerField, compX, compY, W);            //Выстрел компа начинается
+                if (Objects.equals(playerField.getField(compX, compY), "[X]")) {
+                    stShip asdf = getshootedShip(compX, compY, playerStShips);
+                    System.out.print("Выстрел компьютера: ");
+                    if (asdf.getLives() > 0) {
+                        System.out.println("Ранил");
+                        compHitShip = true;
+                        oldPCX = compX;
+                        oldPCY = compY;
+                    }
+                    if (asdf.getLives() == 0) {
+                        System.out.println("Убил");
+                        asdf.surroundWithDots(asdf.getSize(), playerField);
+                        compHitShip = false;
+                    }
+                    playerShipsLeft--;
+                } else {
+                    System.out.println("Выстрел компьютера: Мимо");
+                }                                                                       //Выстрел компа заканчивается
             }
 
             System.out.println("Осталось кораблей у игрока " + playerShipsLeft);
@@ -146,7 +182,6 @@ public class Game {
         }
         return shootedShip;
     }       // После попадания проверяем по массиву с координатами кораблей ранен/убит ли корабль
-
 
 }
 
